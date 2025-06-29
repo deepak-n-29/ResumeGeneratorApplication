@@ -12,11 +12,10 @@ import java.time.LocalDate;
 @AllArgsConstructor
 @Builder
 public class EducationDto {
-    private String jobTitle;
-    private String companyName;
-    private String location;
+    private String institution;
+    private String degree;
+    private String fieldOfStudy;
     private LocalDate startDate;
     private LocalDate endDate;
-    private boolean currentJob;
-    private String description;
+    private String grade;
 }

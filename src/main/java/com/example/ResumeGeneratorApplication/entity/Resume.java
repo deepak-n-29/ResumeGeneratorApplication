@@ -50,7 +50,6 @@ public class Resume {
     @OrderColumn(name= "experience_order") // Ordered project list
     private List<Project> projects;
 
-
     @ElementCollection(fetch = FetchType.LAZY)
     @CollectionTable(name = "resume_skills", joinColumns = @JoinColumn(name = "resume_id"))
     private Set<String> skills;  // Unordered, unique skill set
