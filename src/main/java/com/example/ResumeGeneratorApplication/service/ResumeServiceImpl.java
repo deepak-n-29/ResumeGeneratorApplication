@@ -23,6 +23,7 @@ public class ResumeServiceImpl implements ResumeService{
 
     @Override
     public ResumeDto createResume(ResumeDto resumeDto) {
+        log.info("Creating Resume for {} with Title: {}", resumeDto.getFullName(), resumeDto.getTitle());
         Resume resume = modelMapper.map(resumeDto, Resume.class);
 
         resume.getEducationList().forEach(e->e.setResume(resume));
@@ -30,11 +31,13 @@ public class ResumeServiceImpl implements ResumeService{
         resume.getProjects().forEach(e->e.setResume(resume));
 
         Resume saved = resumeRepository.save(resume);
+        log.debug("Saved resume with ID: {} and Title: {}", saved.getId(), saved.getTitle());
         return modelMapper.map(saved, ResumeDto.class);
     }
 
     @Override
     public ResumeDto updateResume(Long id, ResumeDto resumeDto) {
+        log.info("Updating resume with ID: {} and Title: {}", id, resumeDto.getTitle());
         Resume existingResume = resumeRepository.findById(id)
                 .orElseThrow(()-> new RuntimeException("Resume not found"));
 
@@ -68,11 +71,13 @@ public class ResumeServiceImpl implements ResumeService{
         });
 
         Resume saved = resumeRepository.save(existingResume);
+        log.debug("Resume updated and saved for ID: {} with Title: {}", saved.getId(), saved.getTitle());
         return modelMapper.map(saved, ResumeDto.class);
     }
 
     @Override
     public ResumeDto getResume(Long id) {
+        log.info("Fetching resume with ID: {}", id);
         Resume resume = resumeRepository.findById(id)
                 .orElseThrow(() -> new RuntimeException("Resume not found"));
         return modelMapper.map(resume, ResumeDto.class);
@@ -80,17 +85,20 @@ public class ResumeServiceImpl implements ResumeService{
 
     @Override
     public List<ResumeDto> getAllResumes() {
+        log.info("Fetching all resumes");
         return resumeRepository.findAll().stream().map(resume -> modelMapper.map(resume, ResumeDto.class))
                 .toList();
     }
 
     @Override
     public void deleteResume(Long id) {
+        log.warn("Deleting resume with ID: {}", id);
         resumeRepository.deleteById(id);
     }
 
     @Override
     public void deleteAllResumes() {
+        log.warn("Deleting ALL resumes");
         resumeRepository.deleteAll();
     }
 }
