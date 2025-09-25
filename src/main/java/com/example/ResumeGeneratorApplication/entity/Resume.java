@@ -1,6 +1,7 @@
 package com.example.ResumeGeneratorApplication.entity;
 
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 import lombok.*;
 import org.hibernate.annotations.CreationTimestamp;
@@ -40,14 +41,17 @@ public class Resume {
 
     @OneToMany(mappedBy = "resume", cascade = CascadeType.ALL, orphanRemoval = true)
     @OrderColumn(name= "education_order")
+    @JsonManagedReference
     private List<Education> educationList; // Ordered education (usually chronological)
 
     @OneToMany(mappedBy = "resume", cascade = CascadeType.ALL, orphanRemoval = true)
     @OrderColumn(name= "experience_order")
+    @JsonManagedReference
     private List<Experience> experienceList; // Ordered experience (most recent to oldest)
 
     @OneToMany(mappedBy = "resume", cascade = CascadeType.ALL, orphanRemoval = true)
-    @OrderColumn(name= "experience_order") // Ordered project list
+    @OrderColumn(name= "project_order") // Ordered project list
+    @JsonManagedReference
     private List<Project> projects;
 
     @ElementCollection(fetch = FetchType.LAZY)

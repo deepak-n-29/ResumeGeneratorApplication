@@ -8,6 +8,7 @@ import java.util.Set;
 @AllArgsConstructor
 @Builder
 public class ProjectDto {
+    private Long id;
     private String title;
     private String description;
     private Set<String> techStack;

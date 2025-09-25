@@ -12,6 +12,7 @@ import java.time.LocalDate;
 @AllArgsConstructor
 @Builder
 public class EducationDto {
+    private Long id;
     private String institution;
     private String degree;
     private String fieldOfStudy;

@@ -1,0 +1,6 @@
+2025-09-22 00:25:24 WARN  c.z.h.p.HikariPool - HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=4m24s290ms).
+2025-09-22 00:26:42 WARN  c.z.h.p.HikariPool - HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=1m17s502ms).
+2025-09-22 00:27:39 WARN  c.z.h.p.HikariPool - HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=56s635ms).
+2025-09-22 00:31:48 WARN  c.z.h.p.HikariPool - HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=4m9s40ms).
+2025-09-22 00:33:21 WARN  c.z.h.p.HikariPool - HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=1m33s591ms).
+2025-09-22 00:34:09 INFO  o.s.b.w.e.t.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete

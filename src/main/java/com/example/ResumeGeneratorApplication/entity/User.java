@@ -24,6 +24,7 @@ import java.util.stream.Collectors;
 @NoArgsConstructor
 @AllArgsConstructor
 @EntityListeners(AuditingEntityListener.class)
+@Builder
 public class User implements UserDetails {
 
     @Id

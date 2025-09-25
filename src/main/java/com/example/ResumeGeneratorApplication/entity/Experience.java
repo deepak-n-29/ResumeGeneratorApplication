@@ -1,5 +1,6 @@
 package com.example.ResumeGeneratorApplication.entity;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;
 import lombok.*;
 import org.hibernate.annotations.CreationTimestamp;
@@ -39,6 +40,8 @@ public class Experience {
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "resume_id", nullable = false)
+    @JsonBackReference
+
     private Resume resume;
 
     @CreationTimestamp

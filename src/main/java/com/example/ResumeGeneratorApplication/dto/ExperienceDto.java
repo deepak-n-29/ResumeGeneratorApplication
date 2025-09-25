@@ -8,6 +8,8 @@ import java.time.LocalDate;
 @AllArgsConstructor
 @Builder
 public class ExperienceDto {
+    private Long id;
+
     private String jobTitle;
     private String companyName;
     private String location;

@@ -1,5 +1,0 @@
-2025-07-22 00:13:42 INFO  o.s.b.w.e.t.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
-2025-07-22 00:13:45 INFO  o.s.b.w.e.t.GracefulShutdown - Graceful shutdown complete
-2025-07-22 00:13:45 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-07-22 00:13:45 INFO  c.z.h.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2025-07-22 00:13:45 INFO  c.z.h.HikariDataSource - HikariPool-1 - Shutdown completed.

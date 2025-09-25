@@ -123,14 +123,12 @@ class ResumeServiceImplTest {
         //act
         ResumeDto result = resumeService.createResume(resumeDto);
 
-        //assert
-//        assertThat(resume.getEducationList()).allMatch(education -> education.getResume()==resume);
-//        assertThat(resume.getExperienceList()).allMatch(e -> e.getResume()==resume);
-//        assertThat(resume.getProjects()).allMatch(e->e.getResume()==resume);
+
 
         verify(resumeRepository).save(resumeArgumentCaptor.capture());
         Resume savedResume = resumeArgumentCaptor.getValue();
 
+        //assert
         assertThat(savedResume.getEducationList()).allMatch(education -> education.getResume()==savedResume);
         assertThat(savedResume.getExperienceList()).allMatch(experience -> experience.getResume()==savedResume);
         assertThat(savedResume.getProjects()).allMatch(project -> project.getResume()==savedResume);
@@ -232,15 +230,17 @@ class ResumeServiceImplTest {
 
     @Test
     void deleteResume_shouldThrowIfNotFound() {
-        when(resumeRepository.existsById(1L)).thenReturn(false);
+        Long id = 1L;
 
-        assertThatThrownBy(() -> resumeService.deleteResume(1L))
-                .isInstanceOf(ResourceNotFoundException.class)
-                .hasMessage("Resume not found with id: 1");
+        when(resumeRepository.existsById(id)).thenReturn(false);
 
-        verify(resumeRepository).existsById(1L);
+        assertThatThrownBy(() -> resumeService.deleteResume(id))
+                .isInstanceOf(IllegalArgumentException.class)
+                .hasMessageContaining("Resume with ID " + id + " not found");
+
         verify(resumeRepository, never()).deleteById(anyLong());
     }
+
 
 
     @Test
