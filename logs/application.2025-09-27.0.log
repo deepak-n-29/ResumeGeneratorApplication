@@ -1,0 +1,735 @@
+2025-09-27 13:49:28 INFO  o.h.v.i.u.Version - HV000001: Hibernate Validator 8.0.2.Final
+2025-09-27 13:49:28 INFO  c.e.R.c.ResumeControllerIntegrationTest - Starting ResumeControllerIntegrationTest using Java 21.0.8 with PID 78476 (started by deepakn in /Users/deepakn/Desktop/Java/ResumeGeneratorApplication/clean-repo)
+2025-09-27 13:49:28 DEBUG c.e.R.c.ResumeControllerIntegrationTest - Running with Spring Boot v3.5.3, Spring v6.2.8
+2025-09-27 13:49:28 INFO  c.e.R.c.ResumeControllerIntegrationTest - No active profile set, falling back to 1 default profile: "default"
+2025-09-27 13:49:28 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-27 13:49:28 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 45 ms. Found 2 JPA repository interfaces.
+2025-09-27 13:49:29 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 0 (http)
+2025-09-27 13:49:29 INFO  o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-auto-1"]
+2025-09-27 13:49:29 INFO  o.a.c.c.StandardService - Starting service [Tomcat]
+2025-09-27 13:49:29 INFO  o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-09-27 13:49:29 INFO  o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+2025-09-27 13:49:29 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 732 ms
+2025-09-27 13:49:29 INFO  o.t.i.PullPolicy - Image pull policy will be performed by: DefaultPullPolicy()
+2025-09-27 13:49:29 INFO  o.t.u.ImageNameSubstitutor - Image name substitution will be performed by: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor')
+2025-09-27 13:49:29 INFO  o.t.DockerClientFactory - Testcontainers version: 1.21.2
+2025-09-27 13:49:29 INFO  o.t.d.DockerClientProviderStrategy - Loaded org.testcontainers.dockerclient.UnixSocketClientProviderStrategy from ~/.testcontainers.properties, will try it first
+2025-09-27 13:49:29 INFO  o.t.d.DockerClientProviderStrategy - Found Docker environment with local Unix socket (unix:///var/run/docker.sock)
+2025-09-27 13:49:29 INFO  o.t.DockerClientFactory - Docker host IP address is localhost
+2025-09-27 13:49:29 INFO  o.t.DockerClientFactory - Connected to docker: 
+  Server Version: 28.4.0
+  API Version: 1.51
+  Operating System: Docker Desktop
+  Total Memory: 7837 MB
+  Labels: 
+    com.docker.desktop.address=unix:///Users/deepakn/Library/Containers/com.docker.docker/Data/docker-cli.sock
+2025-09-27 13:49:29 INFO  t.t.1.0 - Creating container for image: testcontainers/ryuk:0.12.0
+2025-09-27 13:49:29 INFO  o.t.u.RegistryAuthLocator - Credential helper/store (docker-credential-desktop) does not have credentials for https://index.docker.io/v1/
+2025-09-27 13:49:29 INFO  t.t.1.0 - Container testcontainers/ryuk:0.12.0 is starting: 0be06aed86ef032833b00b216bba5b49122e9fda507ba26064946c2b8ec4f2ee
+2025-09-27 13:49:29 INFO  t.t.1.0 - Container testcontainers/ryuk:0.12.0 started in PT0.361597S
+2025-09-27 13:49:29 INFO  o.t.u.RyukResourceReaper - Ryuk started - will monitor and terminate Testcontainers containers on JVM exit
+2025-09-27 13:49:29 INFO  o.t.DockerClientFactory - Checking the system...
+2025-09-27 13:49:29 INFO  o.t.DockerClientFactory - ✔︎ Docker server version should be at least 1.6.0
+2025-09-27 13:49:29 INFO  t.postgres:16-alpine - Creating container for image: postgres:16-alpine
+2025-09-27 13:49:29 INFO  t.postgres:16-alpine - Container postgres:16-alpine is starting: ee1de0da5d897119a41bd7cb39832d2c0ad3b1a100d5f19ad8b9c591d59e0998
+2025-09-27 13:49:30 INFO  t.postgres:16-alpine - Container postgres:16-alpine started in PT0.815626S
+2025-09-27 13:49:30 INFO  t.postgres:16-alpine - Container is started (JDBC URL: jdbc:postgresql://localhost:54119/test?loggerLevel=OFF)
+2025-09-27 13:49:30 INFO  o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-27 13:49:30 INFO  o.h.Version - HHH000412: Hibernate ORM core version 6.6.18.Final
+2025-09-27 13:49:30 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-09-27 13:49:30 INFO  o.h.e.b.i.EnversServiceImpl - Envers integration enabled? : true
+2025-09-27 13:49:30 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-27 13:49:30 INFO  c.z.h.HikariDataSource - HikariPool-1 - Starting...
+2025-09-27 13:49:30 INFO  c.z.h.p.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@57e2d15c
+2025-09-27 13:49:30 INFO  c.z.h.HikariDataSource - HikariPool-1 - Start completed.
+2025-09-27 13:49:31 INFO  o.h.o.c.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 16.10
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-27 13:49:31 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-27 13:49:31 WARN  o.h.e.j.s.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2025-09-27 13:49:31 WARN  o.h.e.j.s.SqlExceptionHelper - constraint "uk1j9d9a06i600gd43uu3km82jw" of relation "app_user" does not exist, skipping
+2025-09-27 13:49:31 WARN  o.h.e.j.s.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2025-09-27 13:49:31 WARN  o.h.e.j.s.SqlExceptionHelper - constraint "ukgq04kt5628qab5ue4kyydbbk1" of relation "resume" does not exist, skipping
+2025-09-27 13:49:31 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-27 13:49:31 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-27 13:49:31 DEBUG c.e.R.s.JwtAuthFilter$$SpringCGLIB$$0 - Filter 'jwtAuthFilter' configured for use
+2025-09-27 13:49:31 INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name userServiceImpl
+2025-09-27 13:49:31 INFO  o.s.b.a.e.w.EndpointLinksResolver - Exposing 4 endpoints beneath base path '/actuator'
+2025-09-27 13:49:32 INFO  o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-auto-1"]
+2025-09-27 13:49:32 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 54133 (http) with context path '/'
+2025-09-27 13:49:32 INFO  c.e.R.c.ResumeControllerIntegrationTest - Started ResumeControllerIntegrationTest in 3.733 seconds (process running for 4.24)
+2025-09-27 13:49:32 ERROR i.n.r.d.DnsServerAddressStreamProviders - Unable to load io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'. Use DEBUG level to see the full stack: java.lang.UnsatisfiedLinkError: failed to load the required native library
+2025-09-27 13:49:32 INFO  o.a.c.c.C.[.[.[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-27 13:49:32 INFO  o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-09-27 13:49:32 INFO  o.s.w.s.DispatcherServlet - Completed initialization in 1 ms
+2025-09-27 13:49:32 INFO  c.e.R.c.ResumeController - Fetching all resumes
+2025-09-27 13:49:32 INFO  c.e.R.s.ResumeServiceImpl - Fetching all resumes
+2025-09-27 13:49:32 INFO  c.e.R.s.ResumeServiceImpl - Successfully fetched 2 resumes
+2025-09-27 13:49:32 INFO  c.e.R.a.LoggingAspect - [AOP][AROUND] List com.example.ResumeGeneratorApplication.service.ResumeServiceImpl.getAllResumes() executed in 23 ms
+2025-09-27 13:49:33 WARN  c.e.R.c.ResumeController - Deleting all resumes
+2025-09-27 13:49:33 WARN  c.e.R.s.ResumeServiceImpl - Deleting all resumes
+2025-09-27 13:49:33 INFO  c.e.R.s.ResumeServiceImpl - Successfully deleted all resumes
+2025-09-27 13:49:33 INFO  c.e.R.a.LoggingAspect - [AOP][AROUND] void com.example.ResumeGeneratorApplication.service.ResumeServiceImpl.deleteAllResumes() executed in 15 ms
+2025-09-27 13:49:33 INFO  c.e.R.c.ResumeController - Fetching resume with ID: 5
+2025-09-27 13:49:33 INFO  c.e.R.s.ResumeServiceImpl - Fetching resume with ID: 5
+2025-09-27 13:49:33 INFO  c.e.R.s.ResumeServiceImpl - Successfully fetched resume with ID: 5
+2025-09-27 13:49:33 INFO  c.e.R.a.LoggingAspect - [AOP][AROUND] ResumeDto com.example.ResumeGeneratorApplication.service.ResumeServiceImpl.getResume(Long) executed in 4 ms
+2025-09-27 13:49:33 INFO  c.e.R.s.ResumeServiceImpl - Creating new resume for Test User with title: My First Resume
+2025-09-27 13:49:33 INFO  c.e.R.s.ResumeServiceImpl - Successfully created resume with ID: 6
+2025-09-27 13:49:33 INFO  c.e.R.a.LoggingAspect - [AOP][AROUND] ResumeDto com.example.ResumeGeneratorApplication.service.ResumeServiceImpl.createResume(ResumeDto) executed in 13 ms
+2025-09-27 13:49:33 INFO  c.e.R.c.ResumeController - Received request to create resume for Test User
+2025-09-27 13:49:33 WARN  c.e.R.c.ResumeController - Deleting resume with ID: 7
+2025-09-27 13:49:33 INFO  c.e.R.s.ResumeServiceImpl - Deleting resume with ID: 7
+2025-09-27 13:49:33 INFO  c.e.R.s.ResumeServiceImpl - Successfully deleted resume with ID: 7
+2025-09-27 13:49:33 INFO  c.e.R.a.LoggingAspect - [AOP][AROUND] void com.example.ResumeGeneratorApplication.service.ResumeServiceImpl.deleteResume(Long) executed in 138 ms
+2025-09-27 13:49:33 INFO  c.e.R.c.ResumeController - Received request to update resume with ID: 8
+2025-09-27 13:49:33 INFO  c.e.R.s.ResumeServiceImpl - Updating resume with ID: 8
+2025-09-27 13:49:33 INFO  c.e.R.s.ResumeServiceImpl - Successfully updated resume with ID: 8
+2025-09-27 13:49:33 INFO  c.e.R.a.LoggingAspect - [AOP][AROUND] ResumeDto com.example.ResumeGeneratorApplication.service.ResumeServiceImpl.updateResume(Long,ResumeDto) executed in 17 ms
+2025-09-27 13:49:33 INFO  o.s.b.w.e.t.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-27 13:49:35 INFO  o.s.b.w.e.t.GracefulShutdown - Graceful shutdown complete
+2025-09-27 13:49:35 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-27 13:49:35 INFO  c.z.h.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-09-27 13:49:35 INFO  c.z.h.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-09-27 13:51:09 INFO  o.h.v.i.u.Version - HV000001: Hibernate Validator 8.0.2.Final
+2025-09-27 13:51:10 INFO  c.e.R.c.ResumeControllerIntegrationTest - Starting ResumeControllerIntegrationTest using Java 21.0.8 with PID 78895 (started by deepakn in /Users/deepakn/Desktop/Java/ResumeGeneratorApplication/clean-repo)
+2025-09-27 13:51:10 DEBUG c.e.R.c.ResumeControllerIntegrationTest - Running with Spring Boot v3.5.3, Spring v6.2.8
+2025-09-27 13:51:10 INFO  c.e.R.c.ResumeControllerIntegrationTest - No active profile set, falling back to 1 default profile: "default"
+2025-09-27 13:51:10 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-27 13:51:10 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 44 ms. Found 2 JPA repository interfaces.
+2025-09-27 13:51:10 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 0 (http)
+2025-09-27 13:51:10 INFO  o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-auto-1"]
+2025-09-27 13:51:10 INFO  o.a.c.c.StandardService - Starting service [Tomcat]
+2025-09-27 13:51:10 INFO  o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-09-27 13:51:10 INFO  o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+2025-09-27 13:51:10 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 791 ms
+2025-09-27 13:51:10 INFO  o.t.i.PullPolicy - Image pull policy will be performed by: DefaultPullPolicy()
+2025-09-27 13:51:10 INFO  o.t.u.ImageNameSubstitutor - Image name substitution will be performed by: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor')
+2025-09-27 13:51:10 INFO  o.t.DockerClientFactory - Testcontainers version: 1.21.2
+2025-09-27 13:51:10 INFO  o.t.d.DockerClientProviderStrategy - Loaded org.testcontainers.dockerclient.UnixSocketClientProviderStrategy from ~/.testcontainers.properties, will try it first
+2025-09-27 13:51:11 INFO  o.t.d.DockerClientProviderStrategy - Found Docker environment with local Unix socket (unix:///var/run/docker.sock)
+2025-09-27 13:51:11 INFO  o.t.DockerClientFactory - Docker host IP address is localhost
+2025-09-27 13:51:11 INFO  o.t.DockerClientFactory - Connected to docker: 
+  Server Version: 28.4.0
+  API Version: 1.51
+  Operating System: Docker Desktop
+  Total Memory: 7837 MB
+  Labels: 
+    com.docker.desktop.address=unix:///Users/deepakn/Library/Containers/com.docker.docker/Data/docker-cli.sock
+2025-09-27 13:51:11 INFO  t.t.1.0 - Creating container for image: testcontainers/ryuk:0.12.0
+2025-09-27 13:51:11 INFO  o.t.u.RegistryAuthLocator - Credential helper/store (docker-credential-desktop) does not have credentials for https://index.docker.io/v1/
+2025-09-27 13:51:11 INFO  t.t.1.0 - Container testcontainers/ryuk:0.12.0 is starting: dc7c504eca038dd7eec4cfe7ac5967e385adf7b9b1e844f0e34a0f3e0c6e9f74
+2025-09-27 13:51:11 INFO  t.t.1.0 - Container testcontainers/ryuk:0.12.0 started in PT0.32409S
+2025-09-27 13:51:11 INFO  o.t.u.RyukResourceReaper - Ryuk started - will monitor and terminate Testcontainers containers on JVM exit
+2025-09-27 13:51:11 INFO  o.t.DockerClientFactory - Checking the system...
+2025-09-27 13:51:11 INFO  o.t.DockerClientFactory - ✔︎ Docker server version should be at least 1.6.0
+2025-09-27 13:51:11 INFO  t.postgres:16-alpine - Creating container for image: postgres:16-alpine
+2025-09-27 13:51:11 INFO  t.postgres:16-alpine - Container postgres:16-alpine is starting: fdab3543e1f2a9232ce13ed7697d0f3c8438d0ad16acd006ca05887ef2e7c159
+2025-09-27 13:51:12 INFO  t.postgres:16-alpine - Container postgres:16-alpine started in PT0.679213S
+2025-09-27 13:51:12 INFO  t.postgres:16-alpine - Container is started (JDBC URL: jdbc:postgresql://localhost:54158/test?loggerLevel=OFF)
+2025-09-27 13:51:12 INFO  o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-27 13:51:12 INFO  o.h.Version - HHH000412: Hibernate ORM core version 6.6.18.Final
+2025-09-27 13:51:12 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-09-27 13:51:12 INFO  o.h.e.b.i.EnversServiceImpl - Envers integration enabled? : true
+2025-09-27 13:51:12 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-27 13:51:12 INFO  c.z.h.HikariDataSource - HikariPool-1 - Starting...
+2025-09-27 13:51:12 INFO  c.z.h.p.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@12e3cf1c
+2025-09-27 13:51:12 INFO  c.z.h.HikariDataSource - HikariPool-1 - Start completed.
+2025-09-27 13:51:12 INFO  o.h.o.c.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 16.10
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-27 13:51:12 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-27 13:51:12 WARN  o.h.e.j.s.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2025-09-27 13:51:12 WARN  o.h.e.j.s.SqlExceptionHelper - constraint "uk1j9d9a06i600gd43uu3km82jw" of relation "app_user" does not exist, skipping
+2025-09-27 13:51:12 WARN  o.h.e.j.s.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2025-09-27 13:51:12 WARN  o.h.e.j.s.SqlExceptionHelper - constraint "ukgq04kt5628qab5ue4kyydbbk1" of relation "resume" does not exist, skipping
+2025-09-27 13:51:12 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-27 13:51:12 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-27 13:51:13 DEBUG c.e.R.s.JwtAuthFilter$$SpringCGLIB$$0 - Filter 'jwtAuthFilter' configured for use
+2025-09-27 13:51:13 INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name userServiceImpl
+2025-09-27 13:51:13 INFO  o.s.b.a.e.w.EndpointLinksResolver - Exposing 4 endpoints beneath base path '/actuator'
+2025-09-27 13:51:13 INFO  o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-auto-1"]
+2025-09-27 13:51:13 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 54169 (http) with context path '/'
+2025-09-27 13:51:13 INFO  c.e.R.c.ResumeControllerIntegrationTest - Started ResumeControllerIntegrationTest in 3.616 seconds (process running for 4.075)
+2025-09-27 13:51:13 ERROR i.n.r.d.DnsServerAddressStreamProviders - Unable to load io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'. Use DEBUG level to see the full stack: java.lang.UnsatisfiedLinkError: failed to load the required native library
+2025-09-27 13:51:14 INFO  o.a.c.c.C.[.[.[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-27 13:51:14 INFO  o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-09-27 13:51:14 INFO  o.s.w.s.DispatcherServlet - Completed initialization in 1 ms
+2025-09-27 13:51:14 INFO  c.e.R.c.ResumeController - Fetching all resumes
+2025-09-27 13:51:14 INFO  c.e.R.s.ResumeServiceImpl - Fetching all resumes
+2025-09-27 13:51:14 INFO  c.e.R.s.ResumeServiceImpl - Successfully fetched 2 resumes
+2025-09-27 13:51:14 INFO  c.e.R.a.LoggingAspect - [AOP][AROUND] List com.example.ResumeGeneratorApplication.service.ResumeServiceImpl.getAllResumes() executed in 21 ms
+2025-09-27 13:51:14 WARN  c.e.R.c.ResumeController - Deleting all resumes
+2025-09-27 13:51:14 WARN  c.e.R.s.ResumeServiceImpl - Deleting all resumes
+2025-09-27 13:51:14 INFO  c.e.R.s.ResumeServiceImpl - Successfully deleted all resumes
+2025-09-27 13:51:14 INFO  c.e.R.a.LoggingAspect - [AOP][AROUND] void com.example.ResumeGeneratorApplication.service.ResumeServiceImpl.deleteAllResumes() executed in 11 ms
+2025-09-27 13:51:14 INFO  c.e.R.c.ResumeController - Fetching resume with ID: 5
+2025-09-27 13:51:14 INFO  c.e.R.s.ResumeServiceImpl - Fetching resume with ID: 5
+2025-09-27 13:51:14 INFO  c.e.R.s.ResumeServiceImpl - Successfully fetched resume with ID: 5
+2025-09-27 13:51:14 INFO  c.e.R.a.LoggingAspect - [AOP][AROUND] ResumeDto com.example.ResumeGeneratorApplication.service.ResumeServiceImpl.getResume(Long) executed in 5 ms
+2025-09-27 13:51:14 INFO  c.e.R.s.ResumeServiceImpl - Creating new resume for Test User with title: My First Resume
+2025-09-27 13:51:14 INFO  c.e.R.s.ResumeServiceImpl - Successfully created resume with ID: 6
+2025-09-27 13:51:14 INFO  c.e.R.a.LoggingAspect - [AOP][AROUND] ResumeDto com.example.ResumeGeneratorApplication.service.ResumeServiceImpl.createResume(ResumeDto) executed in 10 ms
+2025-09-27 13:51:14 INFO  c.e.R.c.ResumeController - Received request to create resume for Test User
+2025-09-27 13:51:14 WARN  c.e.R.c.ResumeController - Deleting resume with ID: 7
+2025-09-27 13:51:14 INFO  c.e.R.s.ResumeServiceImpl - Deleting resume with ID: 7
+2025-09-27 13:51:15 INFO  c.e.R.s.ResumeServiceImpl - Successfully deleted resume with ID: 7
+2025-09-27 13:51:15 INFO  c.e.R.a.LoggingAspect - [AOP][AROUND] void com.example.ResumeGeneratorApplication.service.ResumeServiceImpl.deleteResume(Long) executed in 127 ms
+2025-09-27 13:51:15 INFO  c.e.R.c.ResumeController - Received request to update resume with ID: 8
+2025-09-27 13:51:15 INFO  c.e.R.s.ResumeServiceImpl - Updating resume with ID: 8
+2025-09-27 13:51:15 INFO  c.e.R.s.ResumeServiceImpl - Successfully updated resume with ID: 8
+2025-09-27 13:51:15 INFO  c.e.R.a.LoggingAspect - [AOP][AROUND] ResumeDto com.example.ResumeGeneratorApplication.service.ResumeServiceImpl.updateResume(Long,ResumeDto) executed in 12 ms
+2025-09-27 13:51:15 INFO  o.s.b.w.e.t.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-27 13:51:17 INFO  o.s.b.w.e.t.GracefulShutdown - Graceful shutdown complete
+2025-09-27 13:51:17 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-27 13:51:17 INFO  c.z.h.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-09-27 13:51:17 INFO  c.z.h.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-09-27 13:52:31 INFO  o.h.v.i.u.Version - HV000001: Hibernate Validator 8.0.2.Final
+2025-09-27 13:52:31 INFO  c.e.R.c.ResumeControllerIntegrationTest - Starting ResumeControllerIntegrationTest using Java 21.0.8 with PID 79220 (started by deepakn in /Users/deepakn/Desktop/Java/ResumeGeneratorApplication/clean-repo)
+2025-09-27 13:52:31 DEBUG c.e.R.c.ResumeControllerIntegrationTest - Running with Spring Boot v3.5.3, Spring v6.2.8
+2025-09-27 13:52:31 INFO  c.e.R.c.ResumeControllerIntegrationTest - No active profile set, falling back to 1 default profile: "default"
+2025-09-27 13:52:31 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-27 13:52:31 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 58 ms. Found 2 JPA repository interfaces.
+2025-09-27 13:52:31 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 0 (http)
+2025-09-27 13:52:32 INFO  o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-auto-1"]
+2025-09-27 13:52:32 INFO  o.a.c.c.StandardService - Starting service [Tomcat]
+2025-09-27 13:52:32 INFO  o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-09-27 13:52:32 INFO  o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+2025-09-27 13:52:32 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 789 ms
+2025-09-27 13:52:32 INFO  o.t.i.PullPolicy - Image pull policy will be performed by: DefaultPullPolicy()
+2025-09-27 13:52:32 INFO  o.t.u.ImageNameSubstitutor - Image name substitution will be performed by: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor')
+2025-09-27 13:52:32 INFO  o.t.DockerClientFactory - Testcontainers version: 1.21.2
+2025-09-27 13:52:32 INFO  o.t.d.DockerClientProviderStrategy - Loaded org.testcontainers.dockerclient.UnixSocketClientProviderStrategy from ~/.testcontainers.properties, will try it first
+2025-09-27 13:52:32 INFO  o.t.d.DockerClientProviderStrategy - Found Docker environment with local Unix socket (unix:///var/run/docker.sock)
+2025-09-27 13:52:32 INFO  o.t.DockerClientFactory - Docker host IP address is localhost
+2025-09-27 13:52:32 INFO  o.t.DockerClientFactory - Connected to docker: 
+  Server Version: 28.4.0
+  API Version: 1.51
+  Operating System: Docker Desktop
+  Total Memory: 7837 MB
+  Labels: 
+    com.docker.desktop.address=unix:///Users/deepakn/Library/Containers/com.docker.docker/Data/docker-cli.sock
+2025-09-27 13:52:32 INFO  t.t.1.0 - Creating container for image: testcontainers/ryuk:0.12.0
+2025-09-27 13:52:32 INFO  o.t.u.RegistryAuthLocator - Credential helper/store (docker-credential-desktop) does not have credentials for https://index.docker.io/v1/
+2025-09-27 13:52:32 INFO  t.t.1.0 - Container testcontainers/ryuk:0.12.0 is starting: 343096d58d99d3ee56fe2998f119efa5bd526ec93f5fa986b3f54700ef8b0b9f
+2025-09-27 13:52:32 INFO  t.t.1.0 - Container testcontainers/ryuk:0.12.0 started in PT0.282771S
+2025-09-27 13:52:32 INFO  o.t.u.RyukResourceReaper - Ryuk started - will monitor and terminate Testcontainers containers on JVM exit
+2025-09-27 13:52:32 INFO  o.t.DockerClientFactory - Checking the system...
+2025-09-27 13:52:32 INFO  o.t.DockerClientFactory - ✔︎ Docker server version should be at least 1.6.0
+2025-09-27 13:52:32 INFO  t.postgres:16-alpine - Creating container for image: postgres:16-alpine
+2025-09-27 13:52:32 INFO  t.postgres:16-alpine - Container postgres:16-alpine is starting: 75258175edf81407bc2ffe86f1a9f58cc48056c6dbed78e487632c5446c8ccb1
+2025-09-27 13:52:33 INFO  t.postgres:16-alpine - Container postgres:16-alpine started in PT0.683281S
+2025-09-27 13:52:33 INFO  t.postgres:16-alpine - Container is started (JDBC URL: jdbc:postgresql://localhost:54184/test?loggerLevel=OFF)
+2025-09-27 13:52:33 INFO  o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-27 13:52:33 INFO  o.h.Version - HHH000412: Hibernate ORM core version 6.6.18.Final
+2025-09-27 13:52:33 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-09-27 13:52:33 INFO  o.h.e.b.i.EnversServiceImpl - Envers integration enabled? : true
+2025-09-27 13:52:33 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-27 13:52:33 INFO  c.z.h.HikariDataSource - HikariPool-1 - Starting...
+2025-09-27 13:52:33 INFO  c.z.h.p.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@19e03398
+2025-09-27 13:52:33 INFO  c.z.h.HikariDataSource - HikariPool-1 - Start completed.
+2025-09-27 13:52:33 INFO  o.h.o.c.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 16.10
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-27 13:52:33 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-27 13:52:33 WARN  o.h.e.j.s.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2025-09-27 13:52:33 WARN  o.h.e.j.s.SqlExceptionHelper - constraint "uk1j9d9a06i600gd43uu3km82jw" of relation "app_user" does not exist, skipping
+2025-09-27 13:52:33 WARN  o.h.e.j.s.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2025-09-27 13:52:33 WARN  o.h.e.j.s.SqlExceptionHelper - constraint "ukgq04kt5628qab5ue4kyydbbk1" of relation "resume" does not exist, skipping
+2025-09-27 13:52:33 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-27 13:52:34 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-27 13:52:34 DEBUG c.e.R.s.JwtAuthFilter$$SpringCGLIB$$0 - Filter 'jwtAuthFilter' configured for use
+2025-09-27 13:52:34 INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name userServiceImpl
+2025-09-27 13:52:34 INFO  o.s.b.a.e.w.EndpointLinksResolver - Exposing 4 endpoints beneath base path '/actuator'
+2025-09-27 13:52:34 INFO  o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-auto-1"]
+2025-09-27 13:52:34 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 54196 (http) with context path '/'
+2025-09-27 13:52:34 INFO  c.e.R.c.ResumeControllerIntegrationTest - Started ResumeControllerIntegrationTest in 3.508 seconds (process running for 4.061)
+2025-09-27 13:52:35 ERROR i.n.r.d.DnsServerAddressStreamProviders - Unable to load io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'. Use DEBUG level to see the full stack: java.lang.UnsatisfiedLinkError: failed to load the required native library
+2025-09-27 13:52:35 INFO  o.a.c.c.C.[.[.[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-27 13:52:35 INFO  o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-09-27 13:52:35 INFO  o.s.w.s.DispatcherServlet - Completed initialization in 1 ms
+2025-09-27 13:52:35 INFO  c.e.R.c.ResumeController - Fetching all resumes
+2025-09-27 13:52:35 INFO  c.e.R.s.ResumeServiceImpl - Fetching all resumes
+2025-09-27 13:52:35 INFO  c.e.R.s.ResumeServiceImpl - Successfully fetched 2 resumes
+2025-09-27 13:52:35 INFO  c.e.R.a.LoggingAspect - [AOP][AROUND] List com.example.ResumeGeneratorApplication.service.ResumeServiceImpl.getAllResumes() executed in 23 ms
+2025-09-27 13:52:35 WARN  c.e.R.c.ResumeController - Deleting all resumes
+2025-09-27 13:52:35 WARN  c.e.R.s.ResumeServiceImpl - Deleting all resumes
+2025-09-27 13:52:35 INFO  c.e.R.s.ResumeServiceImpl - Successfully deleted all resumes
+2025-09-27 13:52:35 INFO  c.e.R.a.LoggingAspect - [AOP][AROUND] void com.example.ResumeGeneratorApplication.service.ResumeServiceImpl.deleteAllResumes() executed in 5 ms
+2025-09-27 13:52:35 INFO  c.e.R.c.ResumeController - Fetching resume with ID: 5
+2025-09-27 13:52:35 INFO  c.e.R.s.ResumeServiceImpl - Fetching resume with ID: 5
+2025-09-27 13:52:35 INFO  c.e.R.s.ResumeServiceImpl - Successfully fetched resume with ID: 5
+2025-09-27 13:52:35 INFO  c.e.R.a.LoggingAspect - [AOP][AROUND] ResumeDto com.example.ResumeGeneratorApplication.service.ResumeServiceImpl.getResume(Long) executed in 5 ms
+2025-09-27 13:52:35 INFO  c.e.R.s.ResumeServiceImpl - Creating new resume for Test User with title: My First Resume
+2025-09-27 13:52:35 INFO  c.e.R.s.ResumeServiceImpl - Successfully created resume with ID: 6
+2025-09-27 13:52:35 INFO  c.e.R.a.LoggingAspect - [AOP][AROUND] ResumeDto com.example.ResumeGeneratorApplication.service.ResumeServiceImpl.createResume(ResumeDto) executed in 12 ms
+2025-09-27 13:52:35 INFO  c.e.R.c.ResumeController - Received request to create resume for Test User
+2025-09-27 13:52:36 WARN  c.e.R.c.ResumeController - Deleting resume with ID: 7
+2025-09-27 13:52:36 INFO  c.e.R.s.ResumeServiceImpl - Deleting resume with ID: 7
+2025-09-27 13:52:36 INFO  c.e.R.s.ResumeServiceImpl - Successfully deleted resume with ID: 7
+2025-09-27 13:52:36 INFO  c.e.R.a.LoggingAspect - [AOP][AROUND] void com.example.ResumeGeneratorApplication.service.ResumeServiceImpl.deleteResume(Long) executed in 142 ms
+2025-09-27 13:52:36 INFO  c.e.R.c.ResumeController - Received request to update resume with ID: 8
+2025-09-27 13:52:36 INFO  c.e.R.s.ResumeServiceImpl - Updating resume with ID: 8
+2025-09-27 13:52:36 INFO  c.e.R.s.ResumeServiceImpl - Successfully updated resume with ID: 8
+2025-09-27 13:52:36 INFO  c.e.R.a.LoggingAspect - [AOP][AROUND] ResumeDto com.example.ResumeGeneratorApplication.service.ResumeServiceImpl.updateResume(Long,ResumeDto) executed in 14 ms
+2025-09-27 13:52:36 INFO  o.s.b.w.e.t.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-27 13:52:38 INFO  o.s.b.w.e.t.GracefulShutdown - Graceful shutdown complete
+2025-09-27 13:52:38 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-27 13:52:38 INFO  c.z.h.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-09-27 13:52:38 INFO  c.z.h.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-09-27 13:55:23 INFO  o.h.v.i.u.Version - HV000001: Hibernate Validator 8.0.2.Final
+2025-09-27 13:55:23 INFO  c.e.R.c.ResumeControllerIntegrationTest - Starting ResumeControllerIntegrationTest using Java 21.0.8 with PID 79875 (started by deepakn in /Users/deepakn/Desktop/Java/ResumeGeneratorApplication/clean-repo)
+2025-09-27 13:55:23 DEBUG c.e.R.c.ResumeControllerIntegrationTest - Running with Spring Boot v3.5.3, Spring v6.2.8
+2025-09-27 13:55:23 INFO  c.e.R.c.ResumeControllerIntegrationTest - No active profile set, falling back to 1 default profile: "default"
+2025-09-27 13:55:24 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-27 13:55:24 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 46 ms. Found 2 JPA repository interfaces.
+2025-09-27 13:55:24 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 0 (http)
+2025-09-27 13:55:24 INFO  o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-auto-1"]
+2025-09-27 13:55:24 INFO  o.a.c.c.StandardService - Starting service [Tomcat]
+2025-09-27 13:55:24 INFO  o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-09-27 13:55:24 INFO  o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+2025-09-27 13:55:24 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 743 ms
+2025-09-27 13:55:24 INFO  o.t.i.PullPolicy - Image pull policy will be performed by: DefaultPullPolicy()
+2025-09-27 13:55:24 INFO  o.t.u.ImageNameSubstitutor - Image name substitution will be performed by: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor')
+2025-09-27 13:55:24 INFO  o.t.DockerClientFactory - Testcontainers version: 1.21.2
+2025-09-27 13:55:24 INFO  o.t.d.DockerClientProviderStrategy - Loaded org.testcontainers.dockerclient.UnixSocketClientProviderStrategy from ~/.testcontainers.properties, will try it first
+2025-09-27 13:55:24 INFO  o.t.d.DockerClientProviderStrategy - Found Docker environment with local Unix socket (unix:///var/run/docker.sock)
+2025-09-27 13:55:24 INFO  o.t.DockerClientFactory - Docker host IP address is localhost
+2025-09-27 13:55:24 INFO  o.t.DockerClientFactory - Connected to docker: 
+  Server Version: 28.4.0
+  API Version: 1.51
+  Operating System: Docker Desktop
+  Total Memory: 7837 MB
+  Labels: 
+    com.docker.desktop.address=unix:///Users/deepakn/Library/Containers/com.docker.docker/Data/docker-cli.sock
+2025-09-27 13:55:24 INFO  t.t.1.0 - Creating container for image: testcontainers/ryuk:0.12.0
+2025-09-27 13:55:24 INFO  o.t.u.RegistryAuthLocator - Credential helper/store (docker-credential-desktop) does not have credentials for https://index.docker.io/v1/
+2025-09-27 13:55:25 INFO  t.t.1.0 - Container testcontainers/ryuk:0.12.0 is starting: 69576f51fccfada8eb83a717f93be1e35a0607a75896fd5aeed9e9c6c5c992c3
+2025-09-27 13:55:25 INFO  t.t.1.0 - Container testcontainers/ryuk:0.12.0 started in PT0.296121S
+2025-09-27 13:55:25 INFO  o.t.u.RyukResourceReaper - Ryuk started - will monitor and terminate Testcontainers containers on JVM exit
+2025-09-27 13:55:25 INFO  o.t.DockerClientFactory - Checking the system...
+2025-09-27 13:55:25 INFO  o.t.DockerClientFactory - ✔︎ Docker server version should be at least 1.6.0
+2025-09-27 13:55:25 INFO  t.postgres:16-alpine - Creating container for image: postgres:16-alpine
+2025-09-27 13:55:25 INFO  t.postgres:16-alpine - Container postgres:16-alpine is starting: 1f1db967d96c8e014aaa1639bb10c0b6f920eb3b5e5f43f8285a2d91e44235ad
+2025-09-27 13:55:25 INFO  t.postgres:16-alpine - Container postgres:16-alpine started in PT0.703237S
+2025-09-27 13:55:25 INFO  t.postgres:16-alpine - Container is started (JDBC URL: jdbc:postgresql://localhost:54219/test?loggerLevel=OFF)
+2025-09-27 13:55:25 INFO  o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-27 13:55:25 INFO  o.h.Version - HHH000412: Hibernate ORM core version 6.6.18.Final
+2025-09-27 13:55:25 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-09-27 13:55:26 INFO  o.h.e.b.i.EnversServiceImpl - Envers integration enabled? : true
+2025-09-27 13:55:26 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-27 13:55:26 INFO  c.z.h.HikariDataSource - HikariPool-1 - Starting...
+2025-09-27 13:55:26 INFO  c.z.h.p.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5dd79a57
+2025-09-27 13:55:26 INFO  c.z.h.HikariDataSource - HikariPool-1 - Start completed.
+2025-09-27 13:55:26 INFO  o.h.o.c.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 16.10
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-27 13:55:26 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-27 13:55:26 WARN  o.h.e.j.s.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2025-09-27 13:55:26 WARN  o.h.e.j.s.SqlExceptionHelper - constraint "uk1j9d9a06i600gd43uu3km82jw" of relation "app_user" does not exist, skipping
+2025-09-27 13:55:26 WARN  o.h.e.j.s.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2025-09-27 13:55:26 WARN  o.h.e.j.s.SqlExceptionHelper - constraint "ukgq04kt5628qab5ue4kyydbbk1" of relation "resume" does not exist, skipping
+2025-09-27 13:55:26 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-27 13:55:26 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-27 13:55:26 DEBUG c.e.R.s.JwtAuthFilter$$SpringCGLIB$$0 - Filter 'jwtAuthFilter' configured for use
+2025-09-27 13:55:26 INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name userServiceImpl
+2025-09-27 13:55:26 INFO  o.s.b.a.e.w.EndpointLinksResolver - Exposing 4 endpoints beneath base path '/actuator'
+2025-09-27 13:55:27 INFO  o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-auto-1"]
+2025-09-27 13:55:27 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 54230 (http) with context path '/'
+2025-09-27 13:55:27 INFO  c.e.R.c.ResumeControllerIntegrationTest - Started ResumeControllerIntegrationTest in 3.512 seconds (process running for 4.037)
+2025-09-27 13:55:27 ERROR i.n.r.d.DnsServerAddressStreamProviders - Unable to load io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'. Use DEBUG level to see the full stack: java.lang.UnsatisfiedLinkError: failed to load the required native library
+2025-09-27 13:55:27 INFO  o.a.c.c.C.[.[.[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-27 13:55:27 INFO  o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-09-27 13:55:27 INFO  o.s.w.s.DispatcherServlet - Completed initialization in 1 ms
+2025-09-27 13:55:28 INFO  c.e.R.c.ResumeController - Fetching all resumes
+2025-09-27 13:55:28 INFO  c.e.R.s.ResumeServiceImpl - Fetching all resumes
+2025-09-27 13:55:28 INFO  c.e.R.s.ResumeServiceImpl - Successfully fetched 2 resumes
+2025-09-27 13:55:28 INFO  c.e.R.a.LoggingAspect - [AOP][AROUND] List com.example.ResumeGeneratorApplication.service.ResumeServiceImpl.getAllResumes() executed in 24 ms
+2025-09-27 13:55:28 WARN  c.e.R.c.ResumeController - Deleting all resumes
+2025-09-27 13:55:28 WARN  c.e.R.s.ResumeServiceImpl - Deleting all resumes
+2025-09-27 13:55:28 INFO  c.e.R.s.ResumeServiceImpl - Successfully deleted all resumes
+2025-09-27 13:55:28 INFO  c.e.R.a.LoggingAspect - [AOP][AROUND] void com.example.ResumeGeneratorApplication.service.ResumeServiceImpl.deleteAllResumes() executed in 4 ms
+2025-09-27 13:55:28 INFO  c.e.R.c.ResumeController - Fetching resume with ID: 5
+2025-09-27 13:55:28 INFO  c.e.R.s.ResumeServiceImpl - Fetching resume with ID: 5
+2025-09-27 13:55:28 INFO  c.e.R.s.ResumeServiceImpl - Successfully fetched resume with ID: 5
+2025-09-27 13:55:28 INFO  c.e.R.a.LoggingAspect - [AOP][AROUND] ResumeDto com.example.ResumeGeneratorApplication.service.ResumeServiceImpl.getResume(Long) executed in 5 ms
+2025-09-27 13:55:28 INFO  c.e.R.s.ResumeServiceImpl - Creating new resume for Test User with title: My First Resume
+2025-09-27 13:55:28 INFO  c.e.R.s.ResumeServiceImpl - Successfully created resume with ID: 6
+2025-09-27 13:55:28 INFO  c.e.R.a.LoggingAspect - [AOP][AROUND] ResumeDto com.example.ResumeGeneratorApplication.service.ResumeServiceImpl.createResume(ResumeDto) executed in 13 ms
+2025-09-27 13:55:28 INFO  c.e.R.c.ResumeController - Received request to create resume for Test User
+2025-09-27 13:55:28 WARN  c.e.R.c.ResumeController - Deleting resume with ID: 7
+2025-09-27 13:55:28 INFO  c.e.R.s.ResumeServiceImpl - Deleting resume with ID: 7
+2025-09-27 13:55:28 INFO  c.e.R.s.ResumeServiceImpl - Successfully deleted resume with ID: 7
+2025-09-27 13:55:28 INFO  c.e.R.a.LoggingAspect - [AOP][AROUND] void com.example.ResumeGeneratorApplication.service.ResumeServiceImpl.deleteResume(Long) executed in 137 ms
+2025-09-27 13:55:29 INFO  c.e.R.c.ResumeController - Received request to update resume with ID: 8
+2025-09-27 13:55:29 INFO  c.e.R.s.ResumeServiceImpl - Updating resume with ID: 8
+2025-09-27 13:55:29 INFO  c.e.R.s.ResumeServiceImpl - Successfully updated resume with ID: 8
+2025-09-27 13:55:29 INFO  c.e.R.a.LoggingAspect - [AOP][AROUND] ResumeDto com.example.ResumeGeneratorApplication.service.ResumeServiceImpl.updateResume(Long,ResumeDto) executed in 15 ms
+2025-09-27 13:55:29 INFO  o.s.b.w.e.t.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-27 13:55:31 INFO  o.s.b.w.e.t.GracefulShutdown - Graceful shutdown complete
+2025-09-27 13:55:31 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-27 13:55:31 INFO  c.z.h.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-09-27 13:55:31 INFO  c.z.h.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-09-27 13:58:28 INFO  o.h.v.i.u.Version - HV000001: Hibernate Validator 8.0.2.Final
+2025-09-27 13:58:28 INFO  c.e.R.c.ResumeControllerIntegrationTest - Starting ResumeControllerIntegrationTest using Java 21.0.8 with PID 80544 (started by deepakn in /Users/deepakn/Desktop/Java/ResumeGeneratorApplication/clean-repo)
+2025-09-27 13:58:28 DEBUG c.e.R.c.ResumeControllerIntegrationTest - Running with Spring Boot v3.5.3, Spring v6.2.8
+2025-09-27 13:58:28 INFO  c.e.R.c.ResumeControllerIntegrationTest - No active profile set, falling back to 1 default profile: "default"
+2025-09-27 13:58:28 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-27 13:58:28 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 64 ms. Found 2 JPA repository interfaces.
+2025-09-27 13:58:29 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 0 (http)
+2025-09-27 13:58:29 INFO  o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-auto-1"]
+2025-09-27 13:58:29 INFO  o.a.c.c.StandardService - Starting service [Tomcat]
+2025-09-27 13:58:29 INFO  o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-09-27 13:58:29 INFO  o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+2025-09-27 13:58:29 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 854 ms
+2025-09-27 13:58:29 INFO  o.t.i.PullPolicy - Image pull policy will be performed by: DefaultPullPolicy()
+2025-09-27 13:58:29 INFO  o.t.u.ImageNameSubstitutor - Image name substitution will be performed by: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor')
+2025-09-27 13:58:29 INFO  o.t.DockerClientFactory - Testcontainers version: 1.21.2
+2025-09-27 13:58:29 INFO  o.t.d.DockerClientProviderStrategy - Loaded org.testcontainers.dockerclient.UnixSocketClientProviderStrategy from ~/.testcontainers.properties, will try it first
+2025-09-27 13:58:29 INFO  o.t.d.DockerClientProviderStrategy - Found Docker environment with local Unix socket (unix:///var/run/docker.sock)
+2025-09-27 13:58:29 INFO  o.t.DockerClientFactory - Docker host IP address is localhost
+2025-09-27 13:58:29 INFO  o.t.DockerClientFactory - Connected to docker: 
+  Server Version: 28.4.0
+  API Version: 1.51
+  Operating System: Docker Desktop
+  Total Memory: 7837 MB
+  Labels: 
+    com.docker.desktop.address=unix:///Users/deepakn/Library/Containers/com.docker.docker/Data/docker-cli.sock
+2025-09-27 13:58:29 INFO  t.t.1.0 - Creating container for image: testcontainers/ryuk:0.12.0
+2025-09-27 13:58:29 INFO  o.t.u.RegistryAuthLocator - Credential helper/store (docker-credential-desktop) does not have credentials for https://index.docker.io/v1/
+2025-09-27 13:58:29 INFO  t.t.1.0 - Container testcontainers/ryuk:0.12.0 is starting: ddae9657c1c655fbb2f13702f360be2c5a1bbd41b4366aeed35be31185dfa385
+2025-09-27 13:58:29 INFO  t.t.1.0 - Container testcontainers/ryuk:0.12.0 started in PT0.309127S
+2025-09-27 13:58:29 INFO  o.t.u.RyukResourceReaper - Ryuk started - will monitor and terminate Testcontainers containers on JVM exit
+2025-09-27 13:58:29 INFO  o.t.DockerClientFactory - Checking the system...
+2025-09-27 13:58:29 INFO  o.t.DockerClientFactory - ✔︎ Docker server version should be at least 1.6.0
+2025-09-27 13:58:29 INFO  t.postgres:16-alpine - Creating container for image: postgres:16-alpine
+2025-09-27 13:58:29 INFO  t.postgres:16-alpine - Container postgres:16-alpine is starting: 2bcb46a8cffea1cbb58403c9f8e8968fcc0ee194017a89b3022f12d2c9648846
+2025-09-27 13:58:30 INFO  t.postgres:16-alpine - Container postgres:16-alpine started in PT0.714161S
+2025-09-27 13:58:30 INFO  t.postgres:16-alpine - Container is started (JDBC URL: jdbc:postgresql://localhost:54261/test?loggerLevel=OFF)
+2025-09-27 13:58:30 INFO  o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-27 13:58:30 INFO  o.h.Version - HHH000412: Hibernate ORM core version 6.6.18.Final
+2025-09-27 13:58:30 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-09-27 13:58:30 INFO  o.h.e.b.i.EnversServiceImpl - Envers integration enabled? : true
+2025-09-27 13:58:30 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-27 13:58:30 INFO  c.z.h.HikariDataSource - HikariPool-1 - Starting...
+2025-09-27 13:58:30 INFO  c.z.h.p.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4f66f2dd
+2025-09-27 13:58:30 INFO  c.z.h.HikariDataSource - HikariPool-1 - Start completed.
+2025-09-27 13:58:30 INFO  o.h.o.c.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 16.10
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-27 13:58:31 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-27 13:58:31 WARN  o.h.e.j.s.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2025-09-27 13:58:31 WARN  o.h.e.j.s.SqlExceptionHelper - constraint "uk1j9d9a06i600gd43uu3km82jw" of relation "app_user" does not exist, skipping
+2025-09-27 13:58:31 WARN  o.h.e.j.s.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2025-09-27 13:58:31 WARN  o.h.e.j.s.SqlExceptionHelper - constraint "ukgq04kt5628qab5ue4kyydbbk1" of relation "resume" does not exist, skipping
+2025-09-27 13:58:31 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-27 13:58:31 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-27 13:58:31 DEBUG c.e.R.s.JwtAuthFilter$$SpringCGLIB$$0 - Filter 'jwtAuthFilter' configured for use
+2025-09-27 13:58:31 INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name userServiceImpl
+2025-09-27 13:58:31 INFO  o.s.b.a.e.w.EndpointLinksResolver - Exposing 4 endpoints beneath base path '/actuator'
+2025-09-27 13:58:31 INFO  o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-auto-1"]
+2025-09-27 13:58:31 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 54272 (http) with context path '/'
+2025-09-27 13:58:31 INFO  c.e.R.c.ResumeControllerIntegrationTest - Started ResumeControllerIntegrationTest in 3.605 seconds (process running for 4.15)
+2025-09-27 13:58:32 ERROR i.n.r.d.DnsServerAddressStreamProviders - Unable to load io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'. Use DEBUG level to see the full stack: java.lang.UnsatisfiedLinkError: failed to load the required native library
+2025-09-27 13:58:32 INFO  o.a.c.c.C.[.[.[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-27 13:58:32 INFO  o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-09-27 13:58:32 INFO  o.s.w.s.DispatcherServlet - Completed initialization in 0 ms
+2025-09-27 13:58:32 INFO  c.e.R.c.ResumeController - Fetching all resumes
+2025-09-27 13:58:32 INFO  c.e.R.s.ResumeServiceImpl - Fetching all resumes
+2025-09-27 13:58:32 INFO  c.e.R.s.ResumeServiceImpl - Successfully fetched 2 resumes
+2025-09-27 13:58:32 WARN  c.e.R.c.ResumeController - Deleting all resumes
+2025-09-27 13:58:32 WARN  c.e.R.s.ResumeServiceImpl - Deleting all resumes
+2025-09-27 13:58:32 INFO  c.e.R.s.ResumeServiceImpl - Successfully deleted all resumes
+2025-09-27 13:58:32 INFO  c.e.R.c.ResumeController - Fetching resume with ID: 5
+2025-09-27 13:58:32 INFO  c.e.R.s.ResumeServiceImpl - Fetching resume with ID: 5
+2025-09-27 13:58:32 INFO  c.e.R.s.ResumeServiceImpl - Successfully fetched resume with ID: 5
+2025-09-27 13:58:33 INFO  c.e.R.s.ResumeServiceImpl - Creating new resume for Test User with title: My First Resume
+2025-09-27 13:58:33 INFO  c.e.R.s.ResumeServiceImpl - Successfully created resume with ID: 6
+2025-09-27 13:58:33 INFO  c.e.R.c.ResumeController - Received request to create resume for Test User
+2025-09-27 13:58:33 WARN  c.e.R.c.ResumeController - Deleting resume with ID: 7
+2025-09-27 13:58:33 INFO  c.e.R.s.ResumeServiceImpl - Deleting resume with ID: 7
+2025-09-27 13:58:33 INFO  c.e.R.s.ResumeServiceImpl - Successfully deleted resume with ID: 7
+2025-09-27 13:58:33 INFO  c.e.R.c.ResumeController - Received request to update resume with ID: 8
+2025-09-27 13:58:33 INFO  c.e.R.s.ResumeServiceImpl - Updating resume with ID: 8
+2025-09-27 13:58:33 INFO  c.e.R.s.ResumeServiceImpl - Successfully updated resume with ID: 8
+2025-09-27 13:58:33 INFO  o.s.b.w.e.t.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-27 13:58:35 INFO  o.s.b.w.e.t.GracefulShutdown - Graceful shutdown complete
+2025-09-27 13:58:35 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-27 13:58:35 INFO  c.z.h.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-09-27 13:58:35 INFO  c.z.h.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-09-27 14:01:17 INFO  o.h.v.i.u.Version - HV000001: Hibernate Validator 8.0.2.Final
+2025-09-27 14:01:17 INFO  c.e.R.c.ResumeControllerIntegrationTest - Starting ResumeControllerIntegrationTest using Java 21.0.8 with PID 81180 (started by deepakn in /Users/deepakn/Desktop/Java/ResumeGeneratorApplication/clean-repo)
+2025-09-27 14:01:17 DEBUG c.e.R.c.ResumeControllerIntegrationTest - Running with Spring Boot v3.5.3, Spring v6.2.8
+2025-09-27 14:01:17 INFO  c.e.R.c.ResumeControllerIntegrationTest - No active profile set, falling back to 1 default profile: "default"
+2025-09-27 14:01:17 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-27 14:01:17 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 48 ms. Found 2 JPA repository interfaces.
+2025-09-27 14:01:18 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 0 (http)
+2025-09-27 14:01:18 INFO  o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-auto-1"]
+2025-09-27 14:01:18 INFO  o.a.c.c.StandardService - Starting service [Tomcat]
+2025-09-27 14:01:18 INFO  o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-09-27 14:01:18 INFO  o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+2025-09-27 14:01:18 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 810 ms
+2025-09-27 14:01:18 INFO  o.t.i.PullPolicy - Image pull policy will be performed by: DefaultPullPolicy()
+2025-09-27 14:01:18 INFO  o.t.u.ImageNameSubstitutor - Image name substitution will be performed by: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor')
+2025-09-27 14:01:18 INFO  o.t.DockerClientFactory - Testcontainers version: 1.21.2
+2025-09-27 14:01:18 INFO  o.t.d.DockerClientProviderStrategy - Loaded org.testcontainers.dockerclient.UnixSocketClientProviderStrategy from ~/.testcontainers.properties, will try it first
+2025-09-27 14:01:18 INFO  o.t.d.DockerClientProviderStrategy - Found Docker environment with local Unix socket (unix:///var/run/docker.sock)
+2025-09-27 14:01:18 INFO  o.t.DockerClientFactory - Docker host IP address is localhost
+2025-09-27 14:01:18 INFO  o.t.DockerClientFactory - Connected to docker: 
+  Server Version: 28.4.0
+  API Version: 1.51
+  Operating System: Docker Desktop
+  Total Memory: 7837 MB
+  Labels: 
+    com.docker.desktop.address=unix:///Users/deepakn/Library/Containers/com.docker.docker/Data/docker-cli.sock
+2025-09-27 14:01:18 INFO  t.t.1.0 - Creating container for image: testcontainers/ryuk:0.12.0
+2025-09-27 14:01:18 INFO  o.t.u.RegistryAuthLocator - Credential helper/store (docker-credential-desktop) does not have credentials for https://index.docker.io/v1/
+2025-09-27 14:01:18 INFO  t.t.1.0 - Container testcontainers/ryuk:0.12.0 is starting: 4eef655eca5e8e71c86494392fe1178825a623e642f03c47ee46040655e661b2
+2025-09-27 14:01:18 INFO  t.t.1.0 - Container testcontainers/ryuk:0.12.0 started in PT0.318263S
+2025-09-27 14:01:18 INFO  o.t.u.RyukResourceReaper - Ryuk started - will monitor and terminate Testcontainers containers on JVM exit
+2025-09-27 14:01:18 INFO  o.t.DockerClientFactory - Checking the system...
+2025-09-27 14:01:18 INFO  o.t.DockerClientFactory - ✔︎ Docker server version should be at least 1.6.0
+2025-09-27 14:01:18 INFO  t.postgres:16-alpine - Creating container for image: postgres:16-alpine
+2025-09-27 14:01:18 INFO  t.postgres:16-alpine - Container postgres:16-alpine is starting: 950d76058b54c84df4b3d094a7f9398ec6d492a1f46d8105783d9749a4ea0fbf
+2025-09-27 14:01:19 INFO  t.postgres:16-alpine - Container postgres:16-alpine started in PT0.724624S
+2025-09-27 14:01:19 INFO  t.postgres:16-alpine - Container is started (JDBC URL: jdbc:postgresql://localhost:54296/test?loggerLevel=OFF)
+2025-09-27 14:01:19 INFO  o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-27 14:01:19 INFO  o.h.Version - HHH000412: Hibernate ORM core version 6.6.18.Final
+2025-09-27 14:01:19 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-09-27 14:01:19 INFO  o.h.e.b.i.EnversServiceImpl - Envers integration enabled? : true
+2025-09-27 14:01:19 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-27 14:01:19 INFO  c.z.h.HikariDataSource - HikariPool-1 - Starting...
+2025-09-27 14:01:19 INFO  c.z.h.p.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@57e2d15c
+2025-09-27 14:01:19 INFO  c.z.h.HikariDataSource - HikariPool-1 - Start completed.
+2025-09-27 14:01:19 INFO  o.h.o.c.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 16.10
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-27 14:01:20 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-27 14:01:20 WARN  o.h.e.j.s.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2025-09-27 14:01:20 WARN  o.h.e.j.s.SqlExceptionHelper - constraint "uk1j9d9a06i600gd43uu3km82jw" of relation "app_user" does not exist, skipping
+2025-09-27 14:01:20 WARN  o.h.e.j.s.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2025-09-27 14:01:20 WARN  o.h.e.j.s.SqlExceptionHelper - constraint "ukgq04kt5628qab5ue4kyydbbk1" of relation "resume" does not exist, skipping
+2025-09-27 14:01:20 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-27 14:01:20 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-27 14:01:20 DEBUG c.e.R.s.JwtAuthFilter$$SpringCGLIB$$0 - Filter 'jwtAuthFilter' configured for use
+2025-09-27 14:01:20 INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name userServiceImpl
+2025-09-27 14:01:20 INFO  o.s.b.a.e.w.EndpointLinksResolver - Exposing 4 endpoints beneath base path '/actuator'
+2025-09-27 14:01:20 INFO  o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-auto-1"]
+2025-09-27 14:01:20 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 54308 (http) with context path '/'
+2025-09-27 14:01:20 INFO  c.e.R.c.ResumeControllerIntegrationTest - Started ResumeControllerIntegrationTest in 3.607 seconds (process running for 4.196)
+2025-09-27 14:01:21 ERROR i.n.r.d.DnsServerAddressStreamProviders - Unable to load io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'. Use DEBUG level to see the full stack: java.lang.UnsatisfiedLinkError: failed to load the required native library
+2025-09-27 14:01:21 INFO  o.a.c.c.C.[.[.[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-27 14:01:21 INFO  o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-09-27 14:01:21 INFO  o.s.w.s.DispatcherServlet - Completed initialization in 0 ms
+2025-09-27 14:01:21 INFO  c.e.R.c.ResumeController - Fetching all resumes
+2025-09-27 14:01:21 INFO  c.e.R.s.ResumeServiceImpl - Fetching all resumes
+2025-09-27 14:01:21 INFO  c.e.R.s.ResumeServiceImpl - Successfully fetched 2 resumes
+2025-09-27 14:01:21 INFO  c.e.R.a.LoggingAspect - [AOP][AROUND] List com.example.ResumeGeneratorApplication.service.ResumeServiceImpl.getAllResumes() executed in 24 ms
+2025-09-27 14:01:21 WARN  c.e.R.c.ResumeController - Deleting all resumes
+2025-09-27 14:01:21 WARN  c.e.R.s.ResumeServiceImpl - Deleting all resumes
+2025-09-27 14:01:21 INFO  c.e.R.s.ResumeServiceImpl - Successfully deleted all resumes
+2025-09-27 14:01:21 INFO  c.e.R.a.LoggingAspect - [AOP][AROUND] void com.example.ResumeGeneratorApplication.service.ResumeServiceImpl.deleteAllResumes() executed in 5 ms
+2025-09-27 14:01:21 INFO  c.e.R.c.ResumeController - Fetching resume with ID: 5
+2025-09-27 14:01:21 INFO  c.e.R.s.ResumeServiceImpl - Fetching resume with ID: 5
+2025-09-27 14:01:21 INFO  c.e.R.s.ResumeServiceImpl - Successfully fetched resume with ID: 5
+2025-09-27 14:01:21 INFO  c.e.R.a.LoggingAspect - [AOP][AROUND] ResumeDto com.example.ResumeGeneratorApplication.service.ResumeServiceImpl.getResume(Long) executed in 4 ms
+2025-09-27 14:01:22 INFO  c.e.R.s.ResumeServiceImpl - Creating new resume for Test User with title: My First Resume
+2025-09-27 14:01:22 INFO  c.e.R.s.ResumeServiceImpl - Successfully created resume with ID: 6
+2025-09-27 14:01:22 INFO  c.e.R.a.LoggingAspect - [AOP][AROUND] ResumeDto com.example.ResumeGeneratorApplication.service.ResumeServiceImpl.createResume(ResumeDto) executed in 13 ms
+2025-09-27 14:01:22 INFO  c.e.R.c.ResumeController - Received request to create resume for Test User
+2025-09-27 14:01:22 WARN  c.e.R.c.ResumeController - Deleting resume with ID: 7
+2025-09-27 14:01:22 INFO  c.e.R.s.ResumeServiceImpl - Deleting resume with ID: 7
+2025-09-27 14:01:22 INFO  c.e.R.s.ResumeServiceImpl - Successfully deleted resume with ID: 7
+2025-09-27 14:01:22 INFO  c.e.R.a.LoggingAspect - [AOP][AROUND] void com.example.ResumeGeneratorApplication.service.ResumeServiceImpl.deleteResume(Long) executed in 143 ms
+2025-09-27 14:01:22 INFO  c.e.R.c.ResumeController - Received request to update resume with ID: 8
+2025-09-27 14:01:22 INFO  c.e.R.s.ResumeServiceImpl - Updating resume with ID: 8
+2025-09-27 14:01:22 INFO  c.e.R.s.ResumeServiceImpl - Successfully updated resume with ID: 8
+2025-09-27 14:01:22 INFO  c.e.R.a.LoggingAspect - [AOP][AROUND] ResumeDto com.example.ResumeGeneratorApplication.service.ResumeServiceImpl.updateResume(Long,ResumeDto) executed in 16 ms
+2025-09-27 14:01:22 INFO  o.s.b.w.e.t.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-27 14:01:24 INFO  o.s.b.w.e.t.GracefulShutdown - Graceful shutdown complete
+2025-09-27 14:01:24 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-27 14:01:24 INFO  c.z.h.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-09-27 14:01:24 INFO  c.z.h.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-09-27 14:02:13 INFO  o.h.v.i.u.Version - HV000001: Hibernate Validator 8.0.2.Final
+2025-09-27 14:02:13 INFO  c.e.R.c.ResumeControllerIntegrationTest - Starting ResumeControllerIntegrationTest using Java 21.0.8 with PID 81425 (started by deepakn in /Users/deepakn/Desktop/Java/ResumeGeneratorApplication/clean-repo)
+2025-09-27 14:02:13 DEBUG c.e.R.c.ResumeControllerIntegrationTest - Running with Spring Boot v3.5.3, Spring v6.2.8
+2025-09-27 14:02:13 INFO  c.e.R.c.ResumeControllerIntegrationTest - No active profile set, falling back to 1 default profile: "default"
+2025-09-27 14:02:13 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-27 14:02:13 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 61 ms. Found 2 JPA repository interfaces.
+2025-09-27 14:02:14 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 0 (http)
+2025-09-27 14:02:14 INFO  o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-auto-1"]
+2025-09-27 14:02:14 INFO  o.a.c.c.StandardService - Starting service [Tomcat]
+2025-09-27 14:02:14 INFO  o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-09-27 14:02:14 INFO  o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+2025-09-27 14:02:14 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 946 ms
+2025-09-27 14:02:14 INFO  o.t.i.PullPolicy - Image pull policy will be performed by: DefaultPullPolicy()
+2025-09-27 14:02:14 INFO  o.t.u.ImageNameSubstitutor - Image name substitution will be performed by: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor')
+2025-09-27 14:02:14 INFO  o.t.DockerClientFactory - Testcontainers version: 1.21.2
+2025-09-27 14:02:14 INFO  o.t.d.DockerClientProviderStrategy - Loaded org.testcontainers.dockerclient.UnixSocketClientProviderStrategy from ~/.testcontainers.properties, will try it first
+2025-09-27 14:02:14 INFO  o.t.d.DockerClientProviderStrategy - Found Docker environment with local Unix socket (unix:///var/run/docker.sock)
+2025-09-27 14:02:14 INFO  o.t.DockerClientFactory - Docker host IP address is localhost
+2025-09-27 14:02:14 INFO  o.t.DockerClientFactory - Connected to docker: 
+  Server Version: 28.4.0
+  API Version: 1.51
+  Operating System: Docker Desktop
+  Total Memory: 7837 MB
+  Labels: 
+    com.docker.desktop.address=unix:///Users/deepakn/Library/Containers/com.docker.docker/Data/docker-cli.sock
+2025-09-27 14:02:14 INFO  t.t.1.0 - Creating container for image: testcontainers/ryuk:0.12.0
+2025-09-27 14:02:14 INFO  o.t.u.RegistryAuthLocator - Credential helper/store (docker-credential-desktop) does not have credentials for https://index.docker.io/v1/
+2025-09-27 14:02:14 INFO  t.t.1.0 - Container testcontainers/ryuk:0.12.0 is starting: ee1837e75e8f3d67c2a8f5434479f7c9c2581e8597d43e0f6ce8941531d44f81
+2025-09-27 14:02:14 INFO  t.t.1.0 - Container testcontainers/ryuk:0.12.0 started in PT0.289983S
+2025-09-27 14:02:14 INFO  o.t.u.RyukResourceReaper - Ryuk started - will monitor and terminate Testcontainers containers on JVM exit
+2025-09-27 14:02:14 INFO  o.t.DockerClientFactory - Checking the system...
+2025-09-27 14:02:14 INFO  o.t.DockerClientFactory - ✔︎ Docker server version should be at least 1.6.0
+2025-09-27 14:02:14 INFO  t.postgres:16-alpine - Creating container for image: postgres:16-alpine
+2025-09-27 14:02:14 INFO  t.postgres:16-alpine - Container postgres:16-alpine is starting: f851da19df11ed7c3bd291399df46396091db10376069d80bc1008372585153c
+2025-09-27 14:02:15 INFO  t.postgres:16-alpine - Container postgres:16-alpine started in PT0.695301S
+2025-09-27 14:02:15 INFO  t.postgres:16-alpine - Container is started (JDBC URL: jdbc:postgresql://localhost:54321/test?loggerLevel=OFF)
+2025-09-27 14:02:15 INFO  o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-27 14:02:15 INFO  o.h.Version - HHH000412: Hibernate ORM core version 6.6.18.Final
+2025-09-27 14:02:15 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-09-27 14:02:15 INFO  o.h.e.b.i.EnversServiceImpl - Envers integration enabled? : true
+2025-09-27 14:02:15 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-27 14:02:15 INFO  c.z.h.HikariDataSource - HikariPool-1 - Starting...
+2025-09-27 14:02:15 INFO  c.z.h.p.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@526a1b51
+2025-09-27 14:02:15 INFO  c.z.h.HikariDataSource - HikariPool-1 - Start completed.
+2025-09-27 14:02:15 INFO  o.h.o.c.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 16.10
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-27 14:02:16 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-27 14:02:16 WARN  o.h.e.j.s.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2025-09-27 14:02:16 WARN  o.h.e.j.s.SqlExceptionHelper - constraint "uk1j9d9a06i600gd43uu3km82jw" of relation "app_user" does not exist, skipping
+2025-09-27 14:02:16 WARN  o.h.e.j.s.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2025-09-27 14:02:16 WARN  o.h.e.j.s.SqlExceptionHelper - constraint "ukgq04kt5628qab5ue4kyydbbk1" of relation "resume" does not exist, skipping
+2025-09-27 14:02:16 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-27 14:02:16 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-27 14:02:16 DEBUG c.e.R.s.JwtAuthFilter$$SpringCGLIB$$0 - Filter 'jwtAuthFilter' configured for use
+2025-09-27 14:02:16 INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name userServiceImpl
+2025-09-27 14:02:16 INFO  o.s.b.a.e.w.EndpointLinksResolver - Exposing 4 endpoints beneath base path '/actuator'
+2025-09-27 14:02:16 INFO  o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-auto-1"]
+2025-09-27 14:02:17 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 54332 (http) with context path '/'
+2025-09-27 14:02:17 INFO  c.e.R.c.ResumeControllerIntegrationTest - Started ResumeControllerIntegrationTest in 3.98 seconds (process running for 4.535)
+2025-09-27 14:02:17 ERROR i.n.r.d.DnsServerAddressStreamProviders - Unable to load io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'. Use DEBUG level to see the full stack: java.lang.UnsatisfiedLinkError: failed to load the required native library
+2025-09-27 14:02:17 INFO  o.a.c.c.C.[.[.[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-27 14:02:17 INFO  o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-09-27 14:02:17 INFO  o.s.w.s.DispatcherServlet - Completed initialization in 0 ms
+2025-09-27 14:02:17 INFO  c.e.R.a.LoggingAspect - [AOP][BEFORE] com.example.ResumeGeneratorApplication.service.UserServiceImpl.loadUserByUsername() args=[test@example.com] 
+2025-09-27 14:02:17 INFO  c.e.R.a.LoggingAspect - [AOP][AFTER_RETURNING] com.example.ResumeGeneratorApplication.service.UserServiceImpl.loadUserByUsername() returned=com.example.ResumeGeneratorApplication.entity.User@1
+2025-09-27 14:02:17 INFO  c.e.R.a.LoggingAspect - [AOP][AFTER] com.example.ResumeGeneratorApplication.service.UserServiceImpl.loadUserByUsername() args=[test@example.com] 
+2025-09-27 14:02:17 INFO  c.e.R.a.LoggingAspect - [AOP][BEFORE] com.example.ResumeGeneratorApplication.service.UserServiceImpl.getUserById() args=[1] 
+2025-09-27 14:02:17 INFO  c.e.R.a.LoggingAspect - [AOP][AFTER_RETURNING] com.example.ResumeGeneratorApplication.service.UserServiceImpl.getUserById() returned=com.example.ResumeGeneratorApplication.entity.User@1
+2025-09-27 14:02:17 INFO  c.e.R.a.LoggingAspect - [AOP][AFTER] com.example.ResumeGeneratorApplication.service.UserServiceImpl.getUserById() args=[1] 
+2025-09-27 14:02:17 INFO  c.e.R.c.ResumeController - Fetching all resumes
+2025-09-27 14:02:17 INFO  c.e.R.a.LoggingAspect - [AOP][BEFORE] com.example.ResumeGeneratorApplication.service.ResumeServiceImpl.getAllResumes() args=[] 
+2025-09-27 14:02:17 INFO  c.e.R.s.ResumeServiceImpl - Fetching all resumes
+2025-09-27 14:02:17 INFO  c.e.R.s.ResumeServiceImpl - Successfully fetched 2 resumes
+2025-09-27 14:02:17 INFO  c.e.R.a.LoggingAspect - [AOP][AFTER_RETURNING] com.example.ResumeGeneratorApplication.service.ResumeServiceImpl.getAllResumes() returned=[ResumeDto(id=1, title=Resume 1, fullName=Test User, email=test@example.com, phone=1234567890, address=123 Main St, summary=Profile summary text, educationList=[EducationDto(id=1, institution=VVCE, degree=B.E., fieldOfStudy=CSE, startDate=2019-06-01, endDate=2023-06-01, grade=null)], experienceList=[ExperienceDto(id=1, jobTitle=Software Engineer, companyName=Tech Solutions Pvt Ltd, location=Bangalore, India, startDate=2021-07-01, endDate=2023-12-31, currentJob=false, description=Developed REST APIs and improved performance by 30%.)], projects=[ProjectDto(id=1, title=Resume Generator App, description=Spring Boot app that allows users to build and manage resumes., techStack=[Docker, Spring Boot], url=https://github.com/deepak/resume-generator)], skills=[Java, Spring Boot]), ResumeDto(id=2, title=Resume 2, fullName=Test User, email=test@example.com, phone=1234567890, address=123 Main St, summary=Profile summary text, educationList=[EducationDto(id=2, institution=VVCE, degree=B.E., fieldOfStudy=CSE, startDate=2019-06-01, endDate=2023-06-01, grade=null)], experienceList=[ExperienceDto(id=2, jobTitle=Software Engineer, companyName=Tech Solutions Pvt Ltd, location=Bangalore, India, startDate=2021-07-01, endDate=2023-12-31, currentJob=false, description=Developed REST APIs and improved performance by 30%.)], projects=[ProjectDto(id=2, title=Resume Generator App, description=Spring Boot app that allows users to build and manage resumes., techStack=[Docker, Spring Boot], url=https://github.com/deepak/resume-generator)], skills=[Java, Spring Boot])]
+2025-09-27 14:02:17 INFO  c.e.R.a.LoggingAspect - [AOP][AFTER] com.example.ResumeGeneratorApplication.service.ResumeServiceImpl.getAllResumes() args=[] 
+2025-09-27 14:02:17 INFO  c.e.R.a.LoggingAspect - [AOP][AROUND] List com.example.ResumeGeneratorApplication.service.ResumeServiceImpl.getAllResumes() executed in 24 ms
+2025-09-27 14:02:17 INFO  c.e.R.a.LoggingAspect - [AOP][BEFORE] com.example.ResumeGeneratorApplication.service.UserServiceImpl.loadUserByUsername() args=[test@example.com] 
+2025-09-27 14:02:17 INFO  c.e.R.a.LoggingAspect - [AOP][AFTER_RETURNING] com.example.ResumeGeneratorApplication.service.UserServiceImpl.loadUserByUsername() returned=com.example.ResumeGeneratorApplication.entity.User@2
+2025-09-27 14:02:17 INFO  c.e.R.a.LoggingAspect - [AOP][AFTER] com.example.ResumeGeneratorApplication.service.UserServiceImpl.loadUserByUsername() args=[test@example.com] 
+2025-09-27 14:02:18 INFO  c.e.R.a.LoggingAspect - [AOP][BEFORE] com.example.ResumeGeneratorApplication.service.UserServiceImpl.getUserById() args=[2] 
+2025-09-27 14:02:18 INFO  c.e.R.a.LoggingAspect - [AOP][AFTER_RETURNING] com.example.ResumeGeneratorApplication.service.UserServiceImpl.getUserById() returned=com.example.ResumeGeneratorApplication.entity.User@2
+2025-09-27 14:02:18 INFO  c.e.R.a.LoggingAspect - [AOP][AFTER] com.example.ResumeGeneratorApplication.service.UserServiceImpl.getUserById() args=[2] 
+2025-09-27 14:02:18 WARN  c.e.R.c.ResumeController - Deleting all resumes
+2025-09-27 14:02:18 INFO  c.e.R.a.LoggingAspect - [AOP][BEFORE] com.example.ResumeGeneratorApplication.service.ResumeServiceImpl.deleteAllResumes() args=[] 
+2025-09-27 14:02:18 WARN  c.e.R.s.ResumeServiceImpl - Deleting all resumes
+2025-09-27 14:02:18 INFO  c.e.R.s.ResumeServiceImpl - Successfully deleted all resumes
+2025-09-27 14:02:18 INFO  c.e.R.a.LoggingAspect - [AOP][AFTER_RETURNING] com.example.ResumeGeneratorApplication.service.ResumeServiceImpl.deleteAllResumes() returned=null
+2025-09-27 14:02:18 INFO  c.e.R.a.LoggingAspect - [AOP][AFTER] com.example.ResumeGeneratorApplication.service.ResumeServiceImpl.deleteAllResumes() args=[] 
+2025-09-27 14:02:18 INFO  c.e.R.a.LoggingAspect - [AOP][AROUND] void com.example.ResumeGeneratorApplication.service.ResumeServiceImpl.deleteAllResumes() executed in 7 ms
+2025-09-27 14:02:18 INFO  c.e.R.a.LoggingAspect - [AOP][BEFORE] com.example.ResumeGeneratorApplication.service.UserServiceImpl.loadUserByUsername() args=[test@example.com] 
+2025-09-27 14:02:18 INFO  c.e.R.a.LoggingAspect - [AOP][AFTER_RETURNING] com.example.ResumeGeneratorApplication.service.UserServiceImpl.loadUserByUsername() returned=com.example.ResumeGeneratorApplication.entity.User@3
+2025-09-27 14:02:18 INFO  c.e.R.a.LoggingAspect - [AOP][AFTER] com.example.ResumeGeneratorApplication.service.UserServiceImpl.loadUserByUsername() args=[test@example.com] 
+2025-09-27 14:02:18 INFO  c.e.R.a.LoggingAspect - [AOP][BEFORE] com.example.ResumeGeneratorApplication.service.UserServiceImpl.getUserById() args=[3] 
+2025-09-27 14:02:18 INFO  c.e.R.a.LoggingAspect - [AOP][AFTER_RETURNING] com.example.ResumeGeneratorApplication.service.UserServiceImpl.getUserById() returned=com.example.ResumeGeneratorApplication.entity.User@3
+2025-09-27 14:02:18 INFO  c.e.R.a.LoggingAspect - [AOP][AFTER] com.example.ResumeGeneratorApplication.service.UserServiceImpl.getUserById() args=[3] 
+2025-09-27 14:02:18 INFO  c.e.R.c.ResumeController - Fetching resume with ID: 5
+2025-09-27 14:02:18 INFO  c.e.R.a.LoggingAspect - [AOP][BEFORE] com.example.ResumeGeneratorApplication.service.ResumeServiceImpl.getResume() args=[5] 
+2025-09-27 14:02:18 INFO  c.e.R.s.ResumeServiceImpl - Fetching resume with ID: 5
+2025-09-27 14:02:18 INFO  c.e.R.s.ResumeServiceImpl - Successfully fetched resume with ID: 5
+2025-09-27 14:02:18 INFO  c.e.R.a.LoggingAspect - [AOP][AFTER_RETURNING] com.example.ResumeGeneratorApplication.service.ResumeServiceImpl.getResume() returned=ResumeDto(id=5, title=Resume A, fullName=Test User, email=test@example.com, phone=1234567890, address=123 Main St, summary=Profile summary text, educationList=[EducationDto(id=5, institution=VVCE, degree=B.E., fieldOfStudy=CSE, startDate=2019-06-01, endDate=2023-06-01, grade=null)], experienceList=[ExperienceDto(id=5, jobTitle=Software Engineer, companyName=Tech Solutions Pvt Ltd, location=Bangalore, India, startDate=2021-07-01, endDate=2023-12-31, currentJob=false, description=Developed REST APIs and improved performance by 30%.)], projects=[ProjectDto(id=5, title=Resume Generator App, description=Spring Boot app that allows users to build and manage resumes., techStack=[Docker, Spring Boot], url=https://github.com/deepak/resume-generator)], skills=[Java, Spring Boot])
+2025-09-27 14:02:18 INFO  c.e.R.a.LoggingAspect - [AOP][AFTER] com.example.ResumeGeneratorApplication.service.ResumeServiceImpl.getResume() args=[5] 
+2025-09-27 14:02:18 INFO  c.e.R.a.LoggingAspect - [AOP][AROUND] ResumeDto com.example.ResumeGeneratorApplication.service.ResumeServiceImpl.getResume(Long) executed in 6 ms
+2025-09-27 14:02:18 INFO  c.e.R.a.LoggingAspect - [AOP][AFTER_RETURNING] com.example.ResumeGeneratorApplication.controller.ResumeController.getResume() returned=<200 OK OK,ResumeDto(id=5, title=Resume A, fullName=Test User, email=test@example.com, phone=1234567890, address=123 Main St, summary=Profile summary text, educationList=[EducationDto(id=5, institution=VVCE, degree=B.E., fieldOfStudy=CSE, startDate=2019-06-01, endDate=2023-06-01, grade=null)], experienceList=[ExperienceDto(id=5, jobTitle=Software Engineer, companyName=Tech Solutions Pvt Ltd, location=Bangalore, India, startDate=2021-07-01, endDate=2023-12-31, currentJob=false, description=Developed REST APIs and improved performance by 30%.)], projects=[ProjectDto(id=5, title=Resume Generator App, description=Spring Boot app that allows users to build and manage resumes., techStack=[Docker, Spring Boot], url=https://github.com/deepak/resume-generator)], skills=[Java, Spring Boot]),[]>
+2025-09-27 14:02:18 INFO  c.e.R.a.LoggingAspect - [AOP][BEFORE] com.example.ResumeGeneratorApplication.service.UserServiceImpl.loadUserByUsername() args=[test@example.com] 
+2025-09-27 14:02:18 INFO  c.e.R.a.LoggingAspect - [AOP][AFTER_RETURNING] com.example.ResumeGeneratorApplication.service.UserServiceImpl.loadUserByUsername() returned=com.example.ResumeGeneratorApplication.entity.User@4
+2025-09-27 14:02:18 INFO  c.e.R.a.LoggingAspect - [AOP][AFTER] com.example.ResumeGeneratorApplication.service.UserServiceImpl.loadUserByUsername() args=[test@example.com] 
+2025-09-27 14:02:18 INFO  c.e.R.a.LoggingAspect - [AOP][BEFORE] com.example.ResumeGeneratorApplication.service.UserServiceImpl.getUserById() args=[4] 
+2025-09-27 14:02:18 INFO  c.e.R.a.LoggingAspect - [AOP][AFTER_RETURNING] com.example.ResumeGeneratorApplication.service.UserServiceImpl.getUserById() returned=com.example.ResumeGeneratorApplication.entity.User@4
+2025-09-27 14:02:18 INFO  c.e.R.a.LoggingAspect - [AOP][AFTER] com.example.ResumeGeneratorApplication.service.UserServiceImpl.getUserById() args=[4] 
+2025-09-27 14:02:18 INFO  c.e.R.a.LoggingAspect - [AOP][BEFORE] com.example.ResumeGeneratorApplication.service.ResumeServiceImpl.createResume() args=[ResumeDto(id=null, title=My First Resume, fullName=Test User, email=test@example.com, phone=1234567890, address=123 Main St, summary=Profile summary text, educationList=[EducationDto(id=null, institution=VVCE, degree=B.E., fieldOfStudy=CSE, startDate=2019-06-01, endDate=2023-06-01, grade=null)], experienceList=[ExperienceDto(id=null, jobTitle=Software Engineer, companyName=Tech Solutions Pvt Ltd, location=Bangalore, India, startDate=2021-07-01, endDate=2023-12-31, currentJob=false, description=Developed REST APIs and improved performance by 30%.)], projects=[ProjectDto(id=null, title=Resume Generator App, description=Spring Boot app that allows users to build and manage resumes., techStack=[Docker, Spring Boot], url=https://github.com/deepak/resume-generator)], skills=[Java, Spring Boot])] 
+2025-09-27 14:02:18 INFO  c.e.R.s.ResumeServiceImpl - Creating new resume for Test User with title: My First Resume
+2025-09-27 14:02:18 INFO  c.e.R.s.ResumeServiceImpl - Successfully created resume with ID: 6
+2025-09-27 14:02:18 INFO  c.e.R.a.LoggingAspect - [AOP][AFTER_RETURNING] com.example.ResumeGeneratorApplication.service.ResumeServiceImpl.createResume() returned=ResumeDto(id=6, title=My First Resume, fullName=Test User, email=test@example.com, phone=1234567890, address=123 Main St, summary=Profile summary text, educationList=[EducationDto(id=6, institution=VVCE, degree=B.E., fieldOfStudy=CSE, startDate=2019-06-01, endDate=2023-06-01, grade=null)], experienceList=[ExperienceDto(id=6, jobTitle=Software Engineer, companyName=Tech Solutions Pvt Ltd, location=Bangalore, India, startDate=2021-07-01, endDate=2023-12-31, currentJob=false, description=Developed REST APIs and improved performance by 30%.)], projects=[ProjectDto(id=6, title=Resume Generator App, description=Spring Boot app that allows users to build and manage resumes., techStack=[Docker, Spring Boot], url=https://github.com/deepak/resume-generator)], skills=[Java, Spring Boot])
+2025-09-27 14:02:18 INFO  c.e.R.a.LoggingAspect - [AOP][AFTER] com.example.ResumeGeneratorApplication.service.ResumeServiceImpl.createResume() args=[ResumeDto(id=null, title=My First Resume, fullName=Test User, email=test@example.com, phone=1234567890, address=123 Main St, summary=Profile summary text, educationList=[EducationDto(id=null, institution=VVCE, degree=B.E., fieldOfStudy=CSE, startDate=2019-06-01, endDate=2023-06-01, grade=null)], experienceList=[ExperienceDto(id=null, jobTitle=Software Engineer, companyName=Tech Solutions Pvt Ltd, location=Bangalore, India, startDate=2021-07-01, endDate=2023-12-31, currentJob=false, description=Developed REST APIs and improved performance by 30%.)], projects=[ProjectDto(id=null, title=Resume Generator App, description=Spring Boot app that allows users to build and manage resumes., techStack=[Docker, Spring Boot], url=https://github.com/deepak/resume-generator)], skills=[Java, Spring Boot])] 
+2025-09-27 14:02:18 INFO  c.e.R.a.LoggingAspect - [AOP][AROUND] ResumeDto com.example.ResumeGeneratorApplication.service.ResumeServiceImpl.createResume(ResumeDto) executed in 12 ms
+2025-09-27 14:02:18 INFO  c.e.R.c.ResumeController - Received request to create resume for Test User
+2025-09-27 14:02:18 INFO  c.e.R.a.LoggingAspect - [AOP][BEFORE] com.example.ResumeGeneratorApplication.service.UserServiceImpl.loadUserByUsername() args=[test@example.com] 
+2025-09-27 14:02:18 INFO  c.e.R.a.LoggingAspect - [AOP][AFTER_RETURNING] com.example.ResumeGeneratorApplication.service.UserServiceImpl.loadUserByUsername() returned=com.example.ResumeGeneratorApplication.entity.User@5
+2025-09-27 14:02:18 INFO  c.e.R.a.LoggingAspect - [AOP][AFTER] com.example.ResumeGeneratorApplication.service.UserServiceImpl.loadUserByUsername() args=[test@example.com] 
+2025-09-27 14:02:18 INFO  c.e.R.a.LoggingAspect - [AOP][BEFORE] com.example.ResumeGeneratorApplication.service.UserServiceImpl.getUserById() args=[5] 
+2025-09-27 14:02:18 INFO  c.e.R.a.LoggingAspect - [AOP][AFTER_RETURNING] com.example.ResumeGeneratorApplication.service.UserServiceImpl.getUserById() returned=com.example.ResumeGeneratorApplication.entity.User@5
+2025-09-27 14:02:18 INFO  c.e.R.a.LoggingAspect - [AOP][AFTER] com.example.ResumeGeneratorApplication.service.UserServiceImpl.getUserById() args=[5] 
+2025-09-27 14:02:18 WARN  c.e.R.c.ResumeController - Deleting resume with ID: 7
+2025-09-27 14:02:18 INFO  c.e.R.a.LoggingAspect - [AOP][BEFORE] com.example.ResumeGeneratorApplication.service.ResumeServiceImpl.deleteResume() args=[7] 
+2025-09-27 14:02:18 INFO  c.e.R.s.ResumeServiceImpl - Deleting resume with ID: 7
+2025-09-27 14:02:18 INFO  c.e.R.s.ResumeServiceImpl - Successfully deleted resume with ID: 7
+2025-09-27 14:02:18 INFO  c.e.R.a.LoggingAspect - [AOP][AFTER_RETURNING] com.example.ResumeGeneratorApplication.service.ResumeServiceImpl.deleteResume() returned=null
+2025-09-27 14:02:18 INFO  c.e.R.a.LoggingAspect - [AOP][AFTER] com.example.ResumeGeneratorApplication.service.ResumeServiceImpl.deleteResume() args=[7] 
+2025-09-27 14:02:18 INFO  c.e.R.a.LoggingAspect - [AOP][AROUND] void com.example.ResumeGeneratorApplication.service.ResumeServiceImpl.deleteResume(Long) executed in 144 ms
+2025-09-27 14:02:18 INFO  c.e.R.a.LoggingAspect - [AOP][BEFORE] com.example.ResumeGeneratorApplication.service.UserServiceImpl.loadUserByUsername() args=[test@example.com] 
+2025-09-27 14:02:18 INFO  c.e.R.a.LoggingAspect - [AOP][AFTER_RETURNING] com.example.ResumeGeneratorApplication.service.UserServiceImpl.loadUserByUsername() returned=com.example.ResumeGeneratorApplication.entity.User@6
+2025-09-27 14:02:18 INFO  c.e.R.a.LoggingAspect - [AOP][AFTER] com.example.ResumeGeneratorApplication.service.UserServiceImpl.loadUserByUsername() args=[test@example.com] 
+2025-09-27 14:02:18 INFO  c.e.R.a.LoggingAspect - [AOP][BEFORE] com.example.ResumeGeneratorApplication.service.UserServiceImpl.getUserById() args=[6] 
+2025-09-27 14:02:18 INFO  c.e.R.a.LoggingAspect - [AOP][AFTER_RETURNING] com.example.ResumeGeneratorApplication.service.UserServiceImpl.getUserById() returned=com.example.ResumeGeneratorApplication.entity.User@6
+2025-09-27 14:02:18 INFO  c.e.R.a.LoggingAspect - [AOP][AFTER] com.example.ResumeGeneratorApplication.service.UserServiceImpl.getUserById() args=[6] 
+2025-09-27 14:02:18 INFO  c.e.R.c.ResumeController - Received request to update resume with ID: 8
+2025-09-27 14:02:18 INFO  c.e.R.a.LoggingAspect - [AOP][BEFORE] com.example.ResumeGeneratorApplication.service.ResumeServiceImpl.updateResume() args=[8, ResumeDto(id=8, title=Resume B, fullName=Test User, email=test@example.com, phone=1234567890, address=123 Main St, summary=Full Stack Developer, educationList=[EducationDto(id=8, institution=VVCE, degree=B.E., fieldOfStudy=CSE, startDate=2019-06-01, endDate=2023-06-01, grade=null)], experienceList=[ExperienceDto(id=8, jobTitle=Software Engineer, companyName=Tech Solutions Pvt Ltd, location=Bangalore, India, startDate=2021-07-01, endDate=2023-12-31, currentJob=false, description=Developed REST APIs and improved performance by 30%.)], projects=[ProjectDto(id=8, title=Resume Generator App, description=Spring Boot app that allows users to build and manage resumes., techStack=[Docker, Spring Boot], url=https://github.com/deepak/resume-generator)], skills=[Java, Spring Boot, Kubernetes])] 
+2025-09-27 14:02:18 INFO  c.e.R.s.ResumeServiceImpl - Updating resume with ID: 8
+2025-09-27 14:02:18 INFO  c.e.R.s.ResumeServiceImpl - Successfully updated resume with ID: 8
+2025-09-27 14:02:18 INFO  c.e.R.a.LoggingAspect - [AOP][AFTER_RETURNING] com.example.ResumeGeneratorApplication.service.ResumeServiceImpl.updateResume() returned=ResumeDto(id=8, title=Resume B, fullName=Test User, email=test@example.com, phone=1234567890, address=123 Main St, summary=Full Stack Developer, educationList=[EducationDto(id=8, institution=VVCE, degree=B.E., fieldOfStudy=CSE, startDate=2019-06-01, endDate=2023-06-01, grade=null)], experienceList=[ExperienceDto(id=8, jobTitle=Software Engineer, companyName=Tech Solutions Pvt Ltd, location=Bangalore, India, startDate=2021-07-01, endDate=2023-12-31, currentJob=false, description=Developed REST APIs and improved performance by 30%.)], projects=[ProjectDto(id=8, title=Resume Generator App, description=Spring Boot app that allows users to build and manage resumes., techStack=[Docker, Spring Boot], url=https://github.com/deepak/resume-generator)], skills=[Java, Spring Boot, Kubernetes])
+2025-09-27 14:02:18 INFO  c.e.R.a.LoggingAspect - [AOP][AFTER] com.example.ResumeGeneratorApplication.service.ResumeServiceImpl.updateResume() args=[8, ResumeDto(id=8, title=Resume B, fullName=Test User, email=test@example.com, phone=1234567890, address=123 Main St, summary=Full Stack Developer, educationList=[EducationDto(id=8, institution=VVCE, degree=B.E., fieldOfStudy=CSE, startDate=2019-06-01, endDate=2023-06-01, grade=null)], experienceList=[ExperienceDto(id=8, jobTitle=Software Engineer, companyName=Tech Solutions Pvt Ltd, location=Bangalore, India, startDate=2021-07-01, endDate=2023-12-31, currentJob=false, description=Developed REST APIs and improved performance by 30%.)], projects=[ProjectDto(id=8, title=Resume Generator App, description=Spring Boot app that allows users to build and manage resumes., techStack=[Docker, Spring Boot], url=https://github.com/deepak/resume-generator)], skills=[Java, Spring Boot, Kubernetes])] 
+2025-09-27 14:02:18 INFO  c.e.R.a.LoggingAspect - [AOP][AROUND] ResumeDto com.example.ResumeGeneratorApplication.service.ResumeServiceImpl.updateResume(Long,ResumeDto) executed in 15 ms
+2025-09-27 14:02:18 INFO  o.s.b.w.e.t.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-27 14:02:20 INFO  o.s.b.w.e.t.GracefulShutdown - Graceful shutdown complete
+2025-09-27 14:02:20 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-27 14:02:20 INFO  c.z.h.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-09-27 14:02:20 INFO  c.z.h.HikariDataSource - HikariPool-1 - Shutdown completed.

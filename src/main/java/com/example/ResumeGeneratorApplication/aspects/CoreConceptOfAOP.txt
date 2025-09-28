@@ -1,0 +1,77 @@
+🔹 AOP Core Concepts
+
+1. Aspect - A module that encapsulates cross-cutting concerns.
+    Example: LoggingAspect, SecurityAspect, TransactionAspect.
+
+2. Join Point - A specific point in execution where an aspect can be applied.
+In Spring AOP: only method executions are join points (unlike full AspectJ which supports constructors, field access, etc.).
+    Example: Calling saveResume() inside ResumeService.
+
+3. Advice - Action taken by the aspect at a join point.
+
+Types:
+
+@Before → Run before method executes.
+@AfterReturning → Run after method returns normally.
+@AfterThrowing → Run after method throws exception.
+@After → Run after method (regardless of outcome).
+@Around → Wraps the method, can modify input/output.
+
+4. Pointcut - Expression that selects join points where advice should apply.
+    Example: execution(* com.example.service.*.*(..)) → any method in service package.
+
+🔹 Putting It Together
+Aspect = the class that contains advice logic.
+Pointcut = the expression telling where advice applies.
+Join Point = the actual method execution when the advice gets triggered.
+Advice = the code that runs at that join point.
+
+✅ Example:
+
+@Aspect
+@Component
+public class LoggingAspect {
+
+    @Pointcut("execution(* com.example.service.*.*(..))")
+    public void serviceMethods() {}
+
+    @Before("serviceMethods()")
+    public void logBefore(JoinPoint joinPoint) {
+        System.out.println("Calling method: " + joinPoint.getSignature().getName());
+    }
+}
+
+
+Aspect → LoggingAspect class
+Pointcut → serviceMethods() expression
+Join Point → actual method in com.example.service (like saveResume())
+Advice → logBefore method
+
+            ┌───────────────────────────────┐
+            │           Aspect              │
+            │  (LoggingAspect, Security...) │
+            └──────────────┬────────────────┘
+                           │
+                           ▼
+                ┌──────────────────────┐
+                │       Pointcut       │
+                │ (expression: where?) │
+                └──────────────┬───────┘
+                               │
+                               ▼
+                ┌─────────────────────────────┐
+                │         Join Point           │
+                │ (actual method execution)   │
+                │  e.g. saveResume()          │
+                └──────────────┬──────────────┘
+                               │
+                               ▼
+                ┌─────────────────────────────┐
+                │           Advice             │
+                │ (when + what to do)         │
+                │  - Before                   │
+                │  - AfterReturning           │
+                │  - AfterThrowing            │
+                │  - After                    │
+                │  - Around                   │
+                └─────────────────────────────┘

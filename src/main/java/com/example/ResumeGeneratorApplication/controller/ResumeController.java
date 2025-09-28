@@ -1,6 +1,7 @@
 package com.example.ResumeGeneratorApplication.controller;
 
 
+import com.example.ResumeGeneratorApplication.aspects.MyLogging;
 import com.example.ResumeGeneratorApplication.dto.ResumeDto;
 import com.example.ResumeGeneratorApplication.service.ResumeService;
 import io.swagger.v3.oas.annotations.Operation;
@@ -50,6 +51,7 @@ public class ResumeController {
             summary = "Get a resume by ID",
             description = "Returns the resume corresponding to the given ID"
     )
+    @MyLogging
     public ResponseEntity<ResumeDto> getResume(@PathVariable Long id) {
         log.info("Fetching resume with ID: {}", id);
         return ResponseEntity.ok(resumeService.getResume(id));
