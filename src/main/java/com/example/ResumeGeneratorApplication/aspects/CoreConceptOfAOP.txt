@@ -75,3 +75,45 @@ Advice → logBefore method
                 │  - After                    │
                 │  - Around                   │
                 └─────────────────────────────┘
+
+🔹 JoinPoint vs ProceedingJoinPoint
+
+Definition
+
+JoinPoint: Represents the point of execution of a method (the intercepted call).
+ProceedingJoinPoint: A special type of JoinPoint that allows controlling method execution.
+
+Availability
+
+JoinPoint: Available in @Before, @After, @AfterReturning, and @AfterThrowing.
+ProceedingJoinPoint: Only available in @Around.
+
+Execution Control
+
+JoinPoint: You cannot control execution; just read context.
+ProceedingJoinPoint: You can control execution using proceed() (skip, repeat, or wrap method).
+
+Method Execution
+
+JoinPoint: Method executes automatically.
+ProceedingJoinPoint: Method executes only if you call proceed().
+
+Use Cases
+
+JoinPoint: Logging, auditing, security checks, argument inspection.
+ProceedingJoinPoint: Performance monitoring, exception wrapping, conditional execution, retries.
+
+Return Values
+
+JoinPoint: Cannot modify or return method’s result.
+ProceedingJoinPoint: Can modify or replace method’s result before returning.
+
+Inheritance
+
+JoinPoint: Base interface.
+ProceedingJoinPoint: Extends JoinPoint.
+
+👉 In short:
+
+Use JoinPoint when you just want to observe.
+Use ProceedingJoinPoint when you want to control execution.

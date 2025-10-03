@@ -10,6 +10,9 @@ import com.example.ResumeGeneratorApplication.repository.ResumeRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.modelmapper.ModelMapper;
+import org.springframework.cache.annotation.CacheEvict;
+import org.springframework.cache.annotation.CachePut;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -22,8 +25,12 @@ public class ResumeServiceImpl implements ResumeService {
 
     private final ResumeRepository resumeRepository;
     private final ModelMapper modelMapper;
+    private static final String CACHE_NAME = "resumes";
+    private static final String ALL_KEY = "'all'";
+
 
     @Override
+    @Cacheable(cacheNames = CACHE_NAME, key="#id")
     public ResumeDto getResume(Long id) {
         log.info("Fetching resume with ID: {}", id);
         Resume resume = resumeRepository.findById(id)
@@ -36,6 +43,7 @@ public class ResumeServiceImpl implements ResumeService {
     }
 
     @Override
+    @Cacheable(cacheNames = CACHE_NAME, key= ALL_KEY)
     public List<ResumeDto> getAllResumes() {
         log.info("Fetching all resumes");
         List<Resume> resumes = resumeRepository.findAll();
@@ -46,6 +54,9 @@ public class ResumeServiceImpl implements ResumeService {
     }
 
     @Override
+    @Transactional
+    @CachePut(cacheNames = CACHE_NAME,key="#result.id")
+    @CacheEvict(cacheNames = CACHE_NAME, key = ALL_KEY)
     public ResumeDto createResume(ResumeDto resumeDto) {
         log.info("Creating new resume for {} with title: {}", resumeDto.getFullName(), resumeDto.getTitle());
         Resume resume = modelMapper.map(resumeDto, Resume.class);
@@ -61,6 +72,9 @@ public class ResumeServiceImpl implements ResumeService {
     }
 
     @Override
+    @Transactional
+    @CachePut(cacheNames = CACHE_NAME,key="#id")
+    @CacheEvict(cacheNames = CACHE_NAME, key = ALL_KEY)
     public ResumeDto updateResume(Long id, ResumeDto resumeDto) {
         log.info("Updating resume with ID: {}", id);
         Resume existingResume = resumeRepository.findById(id)
@@ -106,6 +120,8 @@ public class ResumeServiceImpl implements ResumeService {
     }
 
     @Override
+    @Transactional
+    @CacheEvict(cacheNames = CACHE_NAME,key="#id")
     public void deleteResume(Long id) {
         log.info("Deleting resume with ID: {}", id);
         boolean exists = resumeRepository.existsById(id);
@@ -119,6 +135,7 @@ public class ResumeServiceImpl implements ResumeService {
 
     @Override
     @Transactional
+    @CacheEvict(cacheNames = CACHE_NAME, allEntries = true)
     public void deleteAllResumes() {
         log.warn("Deleting all resumes");
         resumeRepository.deleteAll();

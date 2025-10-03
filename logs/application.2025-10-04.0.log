@@ -1,0 +1,442 @@
+2025-10-04 00:44:58 INFO  o.h.v.i.u.Version - HV000001: Hibernate Validator 8.0.2.Final
+2025-10-04 00:44:58 INFO  c.e.R.ResumeGeneratorApplication - Starting ResumeGeneratorApplication using Java 21.0.8 with PID 95706 (/Users/deepakn/Desktop/Java/ResumeGeneratorApplication/clean-repo/target/classes started by deepakn in /Users/deepakn/Desktop/Java/ResumeGeneratorApplication/clean-repo)
+2025-10-04 00:44:58 DEBUG c.e.R.ResumeGeneratorApplication - Running with Spring Boot v3.5.3, Spring v6.2.8
+2025-10-04 00:44:58 INFO  c.e.R.ResumeGeneratorApplication - No active profile set, falling back to 1 default profile: "default"
+2025-10-04 00:44:58 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-10-04 00:44:58 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-10-04 00:44:58 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-04 00:44:58 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 15 ms. Found 2 JPA repository interfaces.
+2025-10-04 00:44:58 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-10-04 00:44:58 INFO  o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-10-04 00:44:58 INFO  o.a.c.c.StandardService - Starting service [Tomcat]
+2025-10-04 00:44:58 INFO  o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-10-04 00:44:58 INFO  o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+2025-10-04 00:44:58 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 754 ms
+2025-10-04 00:44:59 INFO  o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-04 00:44:59 INFO  o.h.Version - HHH000412: Hibernate ORM core version 6.6.18.Final
+2025-10-04 00:44:59 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-10-04 00:44:59 INFO  o.h.e.b.i.EnversServiceImpl - Envers integration enabled? : true
+2025-10-04 00:44:59 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-04 00:44:59 INFO  c.z.h.HikariDataSource - HikariPool-1 - Starting...
+2025-10-04 00:44:59 INFO  c.z.h.p.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@48fc8d4d
+2025-10-04 00:44:59 INFO  c.z.h.HikariDataSource - HikariPool-1 - Start completed.
+2025-10-04 00:44:59 INFO  o.h.o.c.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.4
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-04 00:44:59 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-04 00:44:59 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-04 00:45:00 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-04 00:45:00 DEBUG c.e.R.s.JwtAuthFilter$$SpringCGLIB$$0 - Filter 'jwtAuthFilter' configured for use
+2025-10-04 00:45:00 INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name userServiceImpl
+2025-10-04 00:45:00 INFO  o.s.b.a.e.w.EndpointLinksResolver - Exposing 4 endpoints beneath base path '/actuator'
+2025-10-04 00:45:00 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-10-04 00:45:00 INFO  o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-10-04 00:45:00 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-10-04 00:45:00 INFO  c.e.R.ResumeGeneratorApplication - Started ResumeGeneratorApplication in 2.593 seconds (process running for 2.803)
+2025-10-04 00:45:17 INFO  o.a.c.c.C.[.[.[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-04 00:45:17 INFO  o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-10-04 00:45:17 INFO  o.s.w.s.DispatcherServlet - Completed initialization in 0 ms
+2025-10-04 00:45:17 INFO  c.e.R.a.LoggingAspect - [AOP][BEFORE] com.example.ResumeGeneratorApplication.service.UserServiceImpl.loadUserByUsername() args=[deep242910@gmail.com] 
+2025-10-04 00:45:17 INFO  c.e.R.a.LoggingAspect - [AOP][AFTER_RETURNING] com.example.ResumeGeneratorApplication.service.UserServiceImpl.loadUserByUsername() returned=com.example.ResumeGeneratorApplication.entity.User@1
+2025-10-04 00:45:17 INFO  c.e.R.a.LoggingAspect - [AOP][AFTER] com.example.ResumeGeneratorApplication.service.UserServiceImpl.loadUserByUsername() args=[deep242910@gmail.com] 
+2025-10-04 00:45:30 INFO  c.e.R.a.LoggingAspect - [AOP][BEFORE] com.example.ResumeGeneratorApplication.service.UserServiceImpl.getUserById() args=[1] 
+2025-10-04 00:45:30 INFO  c.e.R.a.LoggingAspect - [AOP][AFTER_RETURNING] com.example.ResumeGeneratorApplication.service.UserServiceImpl.getUserById() returned=com.example.ResumeGeneratorApplication.entity.User@1
+2025-10-04 00:45:30 INFO  c.e.R.a.LoggingAspect - [AOP][AFTER] com.example.ResumeGeneratorApplication.service.UserServiceImpl.getUserById() args=[1] 
+2025-10-04 00:45:30 INFO  c.e.R.c.ResumeController - Fetching resume with ID: 1
+2025-10-04 00:45:30 INFO  c.e.R.a.LoggingAspect - [AOP][BEFORE] com.example.ResumeGeneratorApplication.service.ResumeServiceImpl.getResume() args=[1] 
+2025-10-04 00:45:30 INFO  c.e.R.s.ResumeServiceImpl - Fetching resume with ID: 1
+2025-10-04 00:45:30 INFO  c.e.R.s.ResumeServiceImpl - Successfully fetched resume with ID: 1
+2025-10-04 00:45:30 INFO  c.e.R.a.LoggingAspect - [AOP][AFTER_RETURNING] com.example.ResumeGeneratorApplication.service.ResumeServiceImpl.getResume() returned=ResumeDto(id=1, title=Backend Developer Resume, fullName=John Doe, email=john@example.com, phone=1234567890, address=New York, USA, summary=Experienced backend developer with strong expertise in Spring Boot and microservices., educationList=[EducationDto(id=1, institution=VVCE, degree=B.E., fieldOfStudy=Computer Science, startDate=2019-06-01, endDate=2023-06-01, grade=A)], experienceList=[ExperienceDto(id=1, jobTitle=Software Engineer, companyName=Tech Solutions Pvt Ltd, location=Bangalore, India, startDate=2021-07-01, endDate=2023-12-31, currentJob=false, description=Developed REST APIs using Spring Boot and optimized microservices performance.)], projects=[ProjectDto(id=1, title=Resume Generator Application, description=A Spring Boot application that supports resume management and export., techStack=[Java, PostgreSQL, Spring Boot], url=https://github.com/deepak/resume-generator)], skills=[Java, Docker, PostgreSQL, Kafka, Spring Boot])
+2025-10-04 00:45:30 INFO  c.e.R.a.LoggingAspect - [AOP][AFTER] com.example.ResumeGeneratorApplication.service.ResumeServiceImpl.getResume() args=[1] 
+2025-10-04 00:45:30 INFO  c.e.R.a.LoggingAspect - [AOP][AROUND] ResumeDto com.example.ResumeGeneratorApplication.service.ResumeServiceImpl.getResume(Long) executed in 23 ms
+2025-10-04 00:45:30 INFO  c.e.R.a.LoggingAspect - [AOP][AFTER_RETURNING] com.example.ResumeGeneratorApplication.controller.ResumeController.getResume() returned=<200 OK OK,ResumeDto(id=1, title=Backend Developer Resume, fullName=John Doe, email=john@example.com, phone=1234567890, address=New York, USA, summary=Experienced backend developer with strong expertise in Spring Boot and microservices., educationList=[EducationDto(id=1, institution=VVCE, degree=B.E., fieldOfStudy=Computer Science, startDate=2019-06-01, endDate=2023-06-01, grade=A)], experienceList=[ExperienceDto(id=1, jobTitle=Software Engineer, companyName=Tech Solutions Pvt Ltd, location=Bangalore, India, startDate=2021-07-01, endDate=2023-12-31, currentJob=false, description=Developed REST APIs using Spring Boot and optimized microservices performance.)], projects=[ProjectDto(id=1, title=Resume Generator Application, description=A Spring Boot application that supports resume management and export., techStack=[Java, PostgreSQL, Spring Boot], url=https://github.com/deepak/resume-generator)], skills=[Java, Docker, PostgreSQL, Kafka, Spring Boot]),[]>
+2025-10-04 00:45:36 INFO  c.e.R.a.LoggingAspect - [AOP][BEFORE] com.example.ResumeGeneratorApplication.service.UserServiceImpl.getUserById() args=[1] 
+2025-10-04 00:45:36 INFO  c.e.R.a.LoggingAspect - [AOP][AFTER_RETURNING] com.example.ResumeGeneratorApplication.service.UserServiceImpl.getUserById() returned=com.example.ResumeGeneratorApplication.entity.User@1
+2025-10-04 00:45:36 INFO  c.e.R.a.LoggingAspect - [AOP][AFTER] com.example.ResumeGeneratorApplication.service.UserServiceImpl.getUserById() args=[1] 
+2025-10-04 00:45:36 INFO  c.e.R.c.ResumeController - Fetching resume with ID: 1
+2025-10-04 00:45:36 INFO  c.e.R.a.LoggingAspect - [AOP][AFTER_RETURNING] com.example.ResumeGeneratorApplication.controller.ResumeController.getResume() returned=<200 OK OK,ResumeDto(id=1, title=Backend Developer Resume, fullName=John Doe, email=john@example.com, phone=1234567890, address=New York, USA, summary=Experienced backend developer with strong expertise in Spring Boot and microservices., educationList=[EducationDto(id=1, institution=VVCE, degree=B.E., fieldOfStudy=Computer Science, startDate=2019-06-01, endDate=2023-06-01, grade=A)], experienceList=[ExperienceDto(id=1, jobTitle=Software Engineer, companyName=Tech Solutions Pvt Ltd, location=Bangalore, India, startDate=2021-07-01, endDate=2023-12-31, currentJob=false, description=Developed REST APIs using Spring Boot and optimized microservices performance.)], projects=[ProjectDto(id=1, title=Resume Generator Application, description=A Spring Boot application that supports resume management and export., techStack=[Java, PostgreSQL, Spring Boot], url=https://github.com/deepak/resume-generator)], skills=[Java, Docker, PostgreSQL, Kafka, Spring Boot]),[]>
+2025-10-04 00:49:01 INFO  o.s.b.w.e.t.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-04 00:49:03 INFO  o.s.b.w.e.t.GracefulShutdown - Graceful shutdown complete
+2025-10-04 00:49:03 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-04 00:49:03 INFO  c.z.h.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-10-04 00:49:03 INFO  c.z.h.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-10-04 00:49:04 INFO  o.h.v.i.u.Version - HV000001: Hibernate Validator 8.0.2.Final
+2025-10-04 00:49:05 INFO  c.e.R.ResumeGeneratorApplication - Starting ResumeGeneratorApplication using Java 21.0.8 with PID 96584 (/Users/deepakn/Desktop/Java/ResumeGeneratorApplication/clean-repo/target/classes started by deepakn in /Users/deepakn/Desktop/Java/ResumeGeneratorApplication/clean-repo)
+2025-10-04 00:49:05 DEBUG c.e.R.ResumeGeneratorApplication - Running with Spring Boot v3.5.3, Spring v6.2.8
+2025-10-04 00:49:05 INFO  c.e.R.ResumeGeneratorApplication - No active profile set, falling back to 1 default profile: "default"
+2025-10-04 00:49:05 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-10-04 00:49:05 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-10-04 00:49:05 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-04 00:49:05 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 24 ms. Found 2 JPA repository interfaces.
+2025-10-04 00:49:05 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-10-04 00:49:05 INFO  o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-10-04 00:49:05 INFO  o.a.c.c.StandardService - Starting service [Tomcat]
+2025-10-04 00:49:05 INFO  o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-10-04 00:49:05 INFO  o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+2025-10-04 00:49:05 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 862 ms
+2025-10-04 00:49:06 INFO  o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-04 00:49:06 INFO  o.h.Version - HHH000412: Hibernate ORM core version 6.6.18.Final
+2025-10-04 00:49:06 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-10-04 00:49:06 INFO  o.h.e.b.i.EnversServiceImpl - Envers integration enabled? : true
+2025-10-04 00:49:06 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-04 00:49:06 INFO  c.z.h.HikariDataSource - HikariPool-1 - Starting...
+2025-10-04 00:49:06 INFO  c.z.h.p.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@37eeee
+2025-10-04 00:49:06 INFO  c.z.h.HikariDataSource - HikariPool-1 - Start completed.
+2025-10-04 00:49:06 INFO  o.h.o.c.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.4
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-04 00:49:06 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-04 00:49:06 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-04 00:49:06 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-04 00:49:07 DEBUG c.e.R.s.JwtAuthFilter$$SpringCGLIB$$0 - Filter 'jwtAuthFilter' configured for use
+2025-10-04 00:49:07 INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name userServiceImpl
+2025-10-04 00:49:07 INFO  o.s.b.a.e.w.EndpointLinksResolver - Exposing 4 endpoints beneath base path '/actuator'
+2025-10-04 00:49:07 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-10-04 00:49:07 INFO  o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-10-04 00:49:07 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-10-04 00:49:07 INFO  c.e.R.ResumeGeneratorApplication - Started ResumeGeneratorApplication in 2.762 seconds (process running for 2.956)
+2025-10-04 00:49:35 INFO  o.a.c.c.C.[.[.[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-04 00:49:35 INFO  o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-10-04 00:49:35 INFO  o.s.w.s.DispatcherServlet - Completed initialization in 1 ms
+2025-10-04 00:49:35 INFO  c.e.R.a.LoggingAspect - [AOP][BEFORE] com.example.ResumeGeneratorApplication.service.UserServiceImpl.loadUserByUsername() args=[deep242910@gmail.com] 
+2025-10-04 00:49:35 INFO  c.e.R.a.LoggingAspect - [AOP][AFTER_RETURNING] com.example.ResumeGeneratorApplication.service.UserServiceImpl.loadUserByUsername() returned=com.example.ResumeGeneratorApplication.entity.User@1
+2025-10-04 00:49:35 INFO  c.e.R.a.LoggingAspect - [AOP][AFTER] com.example.ResumeGeneratorApplication.service.UserServiceImpl.loadUserByUsername() args=[deep242910@gmail.com] 
+2025-10-04 00:49:44 INFO  c.e.R.a.LoggingAspect - [AOP][BEFORE] com.example.ResumeGeneratorApplication.service.UserServiceImpl.getUserById() args=[1] 
+2025-10-04 00:49:44 INFO  c.e.R.a.LoggingAspect - [AOP][AFTER_RETURNING] com.example.ResumeGeneratorApplication.service.UserServiceImpl.getUserById() returned=com.example.ResumeGeneratorApplication.entity.User@1
+2025-10-04 00:49:44 INFO  c.e.R.a.LoggingAspect - [AOP][AFTER] com.example.ResumeGeneratorApplication.service.UserServiceImpl.getUserById() args=[1] 
+2025-10-04 00:49:44 INFO  c.e.R.c.ResumeController - Fetching resume with ID: 1
+2025-10-04 00:49:44 INFO  c.e.R.a.LoggingAspect - [AOP][BEFORE] com.example.ResumeGeneratorApplication.service.ResumeServiceImpl.getResume() args=[1] 
+2025-10-04 00:49:44 INFO  c.e.R.s.ResumeServiceImpl - Fetching resume with ID: 1
+2025-10-04 00:49:44 INFO  c.e.R.s.ResumeServiceImpl - Successfully fetched resume with ID: 1
+2025-10-04 00:49:44 INFO  c.e.R.a.LoggingAspect - [AOP][AFTER_RETURNING] com.example.ResumeGeneratorApplication.service.ResumeServiceImpl.getResume() returned=ResumeDto(id=1, title=Backend Developer Resume, fullName=John Doe, email=john@example.com, phone=1234567890, address=New York, USA, summary=Experienced backend developer with strong expertise in Spring Boot and microservices., educationList=[EducationDto(id=1, institution=VVCE, degree=B.E., fieldOfStudy=Computer Science, startDate=2019-06-01, endDate=2023-06-01, grade=A)], experienceList=[ExperienceDto(id=1, jobTitle=Software Engineer, companyName=Tech Solutions Pvt Ltd, location=Bangalore, India, startDate=2021-07-01, endDate=2023-12-31, currentJob=false, description=Developed REST APIs using Spring Boot and optimized microservices performance.)], projects=[ProjectDto(id=1, title=Resume Generator Application, description=A Spring Boot application that supports resume management and export., techStack=[Java, PostgreSQL, Spring Boot], url=https://github.com/deepak/resume-generator)], skills=[Java, Docker, PostgreSQL, Kafka, Spring Boot])
+2025-10-04 00:49:44 INFO  c.e.R.a.LoggingAspect - [AOP][AFTER] com.example.ResumeGeneratorApplication.service.ResumeServiceImpl.getResume() args=[1] 
+2025-10-04 00:49:44 INFO  c.e.R.a.LoggingAspect - [AOP][AROUND] ResumeDto com.example.ResumeGeneratorApplication.service.ResumeServiceImpl.getResume(Long) executed in 23 ms
+2025-10-04 00:49:44 INFO  c.e.R.a.LoggingAspect - [AOP][AFTER_RETURNING] com.example.ResumeGeneratorApplication.controller.ResumeController.getResume() returned=<200 OK OK,ResumeDto(id=1, title=Backend Developer Resume, fullName=John Doe, email=john@example.com, phone=1234567890, address=New York, USA, summary=Experienced backend developer with strong expertise in Spring Boot and microservices., educationList=[EducationDto(id=1, institution=VVCE, degree=B.E., fieldOfStudy=Computer Science, startDate=2019-06-01, endDate=2023-06-01, grade=A)], experienceList=[ExperienceDto(id=1, jobTitle=Software Engineer, companyName=Tech Solutions Pvt Ltd, location=Bangalore, India, startDate=2021-07-01, endDate=2023-12-31, currentJob=false, description=Developed REST APIs using Spring Boot and optimized microservices performance.)], projects=[ProjectDto(id=1, title=Resume Generator Application, description=A Spring Boot application that supports resume management and export., techStack=[Java, PostgreSQL, Spring Boot], url=https://github.com/deepak/resume-generator)], skills=[Java, Docker, PostgreSQL, Kafka, Spring Boot]),[]>
+2025-10-04 00:49:45 INFO  c.e.R.a.LoggingAspect - [AOP][BEFORE] com.example.ResumeGeneratorApplication.service.UserServiceImpl.getUserById() args=[1] 
+2025-10-04 00:49:45 INFO  c.e.R.a.LoggingAspect - [AOP][AFTER_RETURNING] com.example.ResumeGeneratorApplication.service.UserServiceImpl.getUserById() returned=com.example.ResumeGeneratorApplication.entity.User@1
+2025-10-04 00:49:45 INFO  c.e.R.a.LoggingAspect - [AOP][AFTER] com.example.ResumeGeneratorApplication.service.UserServiceImpl.getUserById() args=[1] 
+2025-10-04 00:49:45 INFO  c.e.R.c.ResumeController - Fetching resume with ID: 1
+2025-10-04 00:49:45 INFO  c.e.R.a.LoggingAspect - [AOP][AFTER_RETURNING] com.example.ResumeGeneratorApplication.controller.ResumeController.getResume() returned=<200 OK OK,ResumeDto(id=1, title=Backend Developer Resume, fullName=John Doe, email=john@example.com, phone=1234567890, address=New York, USA, summary=Experienced backend developer with strong expertise in Spring Boot and microservices., educationList=[EducationDto(id=1, institution=VVCE, degree=B.E., fieldOfStudy=Computer Science, startDate=2019-06-01, endDate=2023-06-01, grade=A)], experienceList=[ExperienceDto(id=1, jobTitle=Software Engineer, companyName=Tech Solutions Pvt Ltd, location=Bangalore, India, startDate=2021-07-01, endDate=2023-12-31, currentJob=false, description=Developed REST APIs using Spring Boot and optimized microservices performance.)], projects=[ProjectDto(id=1, title=Resume Generator Application, description=A Spring Boot application that supports resume management and export., techStack=[Java, PostgreSQL, Spring Boot], url=https://github.com/deepak/resume-generator)], skills=[Java, Docker, PostgreSQL, Kafka, Spring Boot]),[]>
+2025-10-04 00:52:20 INFO  o.s.b.w.e.t.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-04 00:52:22 INFO  o.s.b.w.e.t.GracefulShutdown - Graceful shutdown complete
+2025-10-04 00:52:22 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-04 00:52:22 INFO  c.z.h.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-10-04 00:52:22 INFO  c.z.h.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-10-04 00:52:24 INFO  o.h.v.i.u.Version - HV000001: Hibernate Validator 8.0.2.Final
+2025-10-04 00:52:24 INFO  c.e.R.ResumeGeneratorApplication - Starting ResumeGeneratorApplication using Java 21.0.8 with PID 97295 (/Users/deepakn/Desktop/Java/ResumeGeneratorApplication/clean-repo/target/classes started by deepakn in /Users/deepakn/Desktop/Java/ResumeGeneratorApplication/clean-repo)
+2025-10-04 00:52:24 DEBUG c.e.R.ResumeGeneratorApplication - Running with Spring Boot v3.5.3, Spring v6.2.8
+2025-10-04 00:52:24 INFO  c.e.R.ResumeGeneratorApplication - No active profile set, falling back to 1 default profile: "default"
+2025-10-04 00:52:24 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-10-04 00:52:24 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-10-04 00:52:25 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-04 00:52:25 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 27 ms. Found 2 JPA repository interfaces.
+2025-10-04 00:52:25 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-10-04 00:52:25 INFO  o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-10-04 00:52:25 INFO  o.a.c.c.StandardService - Starting service [Tomcat]
+2025-10-04 00:52:25 INFO  o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-10-04 00:52:25 INFO  o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+2025-10-04 00:52:25 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 892 ms
+2025-10-04 00:52:25 INFO  o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-04 00:52:25 INFO  o.h.Version - HHH000412: Hibernate ORM core version 6.6.18.Final
+2025-10-04 00:52:25 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-10-04 00:52:25 INFO  o.h.e.b.i.EnversServiceImpl - Envers integration enabled? : true
+2025-10-04 00:52:25 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-04 00:52:25 INFO  c.z.h.HikariDataSource - HikariPool-1 - Starting...
+2025-10-04 00:52:25 INFO  c.z.h.p.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@53f440dc
+2025-10-04 00:52:25 INFO  c.z.h.HikariDataSource - HikariPool-1 - Start completed.
+2025-10-04 00:52:25 INFO  o.h.o.c.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.4
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-04 00:52:26 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-04 00:52:26 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-04 00:52:26 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-04 00:52:26 DEBUG c.e.R.s.JwtAuthFilter$$SpringCGLIB$$0 - Filter 'jwtAuthFilter' configured for use
+2025-10-04 00:52:26 INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name userServiceImpl
+2025-10-04 00:52:27 INFO  o.s.b.a.e.w.EndpointLinksResolver - Exposing 4 endpoints beneath base path '/actuator'
+2025-10-04 00:52:27 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-10-04 00:52:27 INFO  o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-10-04 00:52:27 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-10-04 00:52:27 INFO  c.e.R.ResumeGeneratorApplication - Started ResumeGeneratorApplication in 2.739 seconds (process running for 3.04)
+2025-10-04 00:58:03 INFO  o.s.b.w.e.t.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-04 00:58:05 INFO  o.s.b.w.e.t.GracefulShutdown - Graceful shutdown complete
+2025-10-04 00:58:05 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-04 00:58:05 INFO  c.z.h.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-10-04 00:58:05 INFO  c.z.h.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-10-04 00:58:06 INFO  o.h.v.i.u.Version - HV000001: Hibernate Validator 8.0.2.Final
+2025-10-04 00:58:06 INFO  c.e.R.ResumeGeneratorApplication - Starting ResumeGeneratorApplication using Java 21.0.8 with PID 98620 (/Users/deepakn/Desktop/Java/ResumeGeneratorApplication/clean-repo/target/classes started by deepakn in /Users/deepakn/Desktop/Java/ResumeGeneratorApplication/clean-repo)
+2025-10-04 00:58:06 DEBUG c.e.R.ResumeGeneratorApplication - Running with Spring Boot v3.5.3, Spring v6.2.8
+2025-10-04 00:58:06 INFO  c.e.R.ResumeGeneratorApplication - No active profile set, falling back to 1 default profile: "default"
+2025-10-04 00:58:06 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-10-04 00:58:06 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-10-04 00:58:07 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-04 00:58:07 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16 ms. Found 2 JPA repository interfaces.
+2025-10-04 00:58:07 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-10-04 00:58:07 INFO  o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-10-04 00:58:07 INFO  o.a.c.c.StandardService - Starting service [Tomcat]
+2025-10-04 00:58:07 INFO  o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-10-04 00:58:07 INFO  o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+2025-10-04 00:58:07 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 852 ms
+2025-10-04 00:58:07 INFO  o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-04 00:58:07 INFO  o.h.Version - HHH000412: Hibernate ORM core version 6.6.18.Final
+2025-10-04 00:58:07 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-10-04 00:58:08 INFO  o.h.e.b.i.EnversServiceImpl - Envers integration enabled? : true
+2025-10-04 00:58:08 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-04 00:58:08 INFO  c.z.h.HikariDataSource - HikariPool-1 - Starting...
+2025-10-04 00:58:08 INFO  c.z.h.p.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@20a8bacf
+2025-10-04 00:58:08 INFO  c.z.h.HikariDataSource - HikariPool-1 - Start completed.
+2025-10-04 00:58:08 INFO  o.h.o.c.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.4
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-04 00:58:08 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-04 00:58:08 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-04 00:58:08 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-04 00:58:08 DEBUG c.e.R.s.JwtAuthFilter$$SpringCGLIB$$0 - Filter 'jwtAuthFilter' configured for use
+2025-10-04 00:58:09 INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name userServiceImpl
+2025-10-04 00:58:09 INFO  o.s.b.a.e.w.EndpointLinksResolver - Exposing 4 endpoints beneath base path '/actuator'
+2025-10-04 00:58:09 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-10-04 00:58:09 INFO  o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-10-04 00:58:09 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-10-04 00:58:09 INFO  c.e.R.ResumeGeneratorApplication - Started ResumeGeneratorApplication in 2.784 seconds (process running for 2.976)
+2025-10-04 00:58:26 INFO  o.a.c.c.C.[.[.[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-04 00:58:26 INFO  o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-10-04 00:58:26 INFO  o.s.w.s.DispatcherServlet - Completed initialization in 0 ms
+2025-10-04 00:58:26 INFO  c.e.R.a.LoggingAspect - [AOP][BEFORE] com.example.ResumeGeneratorApplication.service.UserServiceImpl.loadUserByUsername() args=[deep242910@gmail.com] 
+2025-10-04 00:58:26 INFO  c.e.R.a.LoggingAspect - [AOP][AFTER_RETURNING] com.example.ResumeGeneratorApplication.service.UserServiceImpl.loadUserByUsername() returned=com.example.ResumeGeneratorApplication.entity.User@1
+2025-10-04 00:58:26 INFO  c.e.R.a.LoggingAspect - [AOP][AFTER] com.example.ResumeGeneratorApplication.service.UserServiceImpl.loadUserByUsername() args=[deep242910@gmail.com] 
+2025-10-04 00:58:39 INFO  c.e.R.a.LoggingAspect - [AOP][BEFORE] com.example.ResumeGeneratorApplication.service.UserServiceImpl.getUserById() args=[1] 
+2025-10-04 00:58:39 INFO  c.e.R.a.LoggingAspect - [AOP][AFTER_RETURNING] com.example.ResumeGeneratorApplication.service.UserServiceImpl.getUserById() returned=com.example.ResumeGeneratorApplication.entity.User@1
+2025-10-04 00:58:39 INFO  c.e.R.a.LoggingAspect - [AOP][AFTER] com.example.ResumeGeneratorApplication.service.UserServiceImpl.getUserById() args=[1] 
+2025-10-04 00:58:39 INFO  c.e.R.c.ResumeController - Fetching resume with ID: 1
+2025-10-04 00:58:39 INFO  c.e.R.a.LoggingAspect - [AOP][BEFORE] com.example.ResumeGeneratorApplication.service.ResumeServiceImpl.getResume() args=[1] 
+2025-10-04 00:58:39 INFO  c.e.R.s.ResumeServiceImpl - Fetching resume with ID: 1
+2025-10-04 00:58:39 INFO  c.e.R.s.ResumeServiceImpl - Successfully fetched resume with ID: 1
+2025-10-04 00:58:39 INFO  c.e.R.a.LoggingAspect - [AOP][AFTER_RETURNING] com.example.ResumeGeneratorApplication.service.ResumeServiceImpl.getResume() returned=ResumeDto(id=1, title=Backend Developer Resume, fullName=John Doe, email=john@example.com, phone=1234567890, address=New York, USA, summary=Experienced backend developer with strong expertise in Spring Boot and microservices., educationList=[EducationDto(id=1, institution=VVCE, degree=B.E., fieldOfStudy=Computer Science, startDate=2019-06-01, endDate=2023-06-01, grade=A)], experienceList=[ExperienceDto(id=1, jobTitle=Software Engineer, companyName=Tech Solutions Pvt Ltd, location=Bangalore, India, startDate=2021-07-01, endDate=2023-12-31, currentJob=false, description=Developed REST APIs using Spring Boot and optimized microservices performance.)], projects=[ProjectDto(id=1, title=Resume Generator Application, description=A Spring Boot application that supports resume management and export., techStack=[Java, PostgreSQL, Spring Boot], url=https://github.com/deepak/resume-generator)], skills=[Java, Docker, PostgreSQL, Kafka, Spring Boot])
+2025-10-04 00:58:39 INFO  c.e.R.a.LoggingAspect - [AOP][AFTER] com.example.ResumeGeneratorApplication.service.ResumeServiceImpl.getResume() args=[1] 
+2025-10-04 00:58:39 INFO  c.e.R.a.LoggingAspect - [AOP][AROUND] ResumeDto com.example.ResumeGeneratorApplication.service.ResumeServiceImpl.getResume(Long) executed in 21 ms
+2025-10-04 00:58:39 INFO  c.e.R.a.LoggingAspect - [AOP][AFTER_RETURNING] com.example.ResumeGeneratorApplication.controller.ResumeController.getResume() returned=<200 OK OK,ResumeDto(id=1, title=Backend Developer Resume, fullName=John Doe, email=john@example.com, phone=1234567890, address=New York, USA, summary=Experienced backend developer with strong expertise in Spring Boot and microservices., educationList=[EducationDto(id=1, institution=VVCE, degree=B.E., fieldOfStudy=Computer Science, startDate=2019-06-01, endDate=2023-06-01, grade=A)], experienceList=[ExperienceDto(id=1, jobTitle=Software Engineer, companyName=Tech Solutions Pvt Ltd, location=Bangalore, India, startDate=2021-07-01, endDate=2023-12-31, currentJob=false, description=Developed REST APIs using Spring Boot and optimized microservices performance.)], projects=[ProjectDto(id=1, title=Resume Generator Application, description=A Spring Boot application that supports resume management and export., techStack=[Java, PostgreSQL, Spring Boot], url=https://github.com/deepak/resume-generator)], skills=[Java, Docker, PostgreSQL, Kafka, Spring Boot]),[]>
+2025-10-04 00:58:41 INFO  c.e.R.a.LoggingAspect - [AOP][BEFORE] com.example.ResumeGeneratorApplication.service.UserServiceImpl.getUserById() args=[1] 
+2025-10-04 00:58:41 INFO  c.e.R.a.LoggingAspect - [AOP][AFTER_RETURNING] com.example.ResumeGeneratorApplication.service.UserServiceImpl.getUserById() returned=com.example.ResumeGeneratorApplication.entity.User@1
+2025-10-04 00:58:41 INFO  c.e.R.a.LoggingAspect - [AOP][AFTER] com.example.ResumeGeneratorApplication.service.UserServiceImpl.getUserById() args=[1] 
+2025-10-04 00:58:41 INFO  c.e.R.c.ResumeController - Fetching resume with ID: 1
+2025-10-04 00:58:41 INFO  c.e.R.a.LoggingAspect - [AOP][AFTER_RETURNING] com.example.ResumeGeneratorApplication.controller.ResumeController.getResume() returned=<200 OK OK,ResumeDto(id=1, title=Backend Developer Resume, fullName=John Doe, email=john@example.com, phone=1234567890, address=New York, USA, summary=Experienced backend developer with strong expertise in Spring Boot and microservices., educationList=[EducationDto(id=1, institution=VVCE, degree=B.E., fieldOfStudy=Computer Science, startDate=2019-06-01, endDate=2023-06-01, grade=A)], experienceList=[ExperienceDto(id=1, jobTitle=Software Engineer, companyName=Tech Solutions Pvt Ltd, location=Bangalore, India, startDate=2021-07-01, endDate=2023-12-31, currentJob=false, description=Developed REST APIs using Spring Boot and optimized microservices performance.)], projects=[ProjectDto(id=1, title=Resume Generator Application, description=A Spring Boot application that supports resume management and export., techStack=[Java, PostgreSQL, Spring Boot], url=https://github.com/deepak/resume-generator)], skills=[Java, Docker, PostgreSQL, Kafka, Spring Boot]),[]>
+2025-10-04 00:58:44 INFO  c.e.R.a.LoggingAspect - [AOP][BEFORE] com.example.ResumeGeneratorApplication.service.UserServiceImpl.getUserById() args=[1] 
+2025-10-04 00:58:44 INFO  c.e.R.a.LoggingAspect - [AOP][AFTER_RETURNING] com.example.ResumeGeneratorApplication.service.UserServiceImpl.getUserById() returned=com.example.ResumeGeneratorApplication.entity.User@1
+2025-10-04 00:58:44 INFO  c.e.R.a.LoggingAspect - [AOP][AFTER] com.example.ResumeGeneratorApplication.service.UserServiceImpl.getUserById() args=[1] 
+2025-10-04 00:58:44 INFO  c.e.R.c.ResumeController - Fetching resume with ID: 1
+2025-10-04 00:58:44 INFO  c.e.R.a.LoggingAspect - [AOP][AFTER_RETURNING] com.example.ResumeGeneratorApplication.controller.ResumeController.getResume() returned=<200 OK OK,ResumeDto(id=1, title=Backend Developer Resume, fullName=John Doe, email=john@example.com, phone=1234567890, address=New York, USA, summary=Experienced backend developer with strong expertise in Spring Boot and microservices., educationList=[EducationDto(id=1, institution=VVCE, degree=B.E., fieldOfStudy=Computer Science, startDate=2019-06-01, endDate=2023-06-01, grade=A)], experienceList=[ExperienceDto(id=1, jobTitle=Software Engineer, companyName=Tech Solutions Pvt Ltd, location=Bangalore, India, startDate=2021-07-01, endDate=2023-12-31, currentJob=false, description=Developed REST APIs using Spring Boot and optimized microservices performance.)], projects=[ProjectDto(id=1, title=Resume Generator Application, description=A Spring Boot application that supports resume management and export., techStack=[Java, PostgreSQL, Spring Boot], url=https://github.com/deepak/resume-generator)], skills=[Java, Docker, PostgreSQL, Kafka, Spring Boot]),[]>
+2025-10-04 01:02:01 INFO  o.s.b.w.e.t.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-04 01:02:03 INFO  o.s.b.w.e.t.GracefulShutdown - Graceful shutdown complete
+2025-10-04 01:02:03 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-04 01:02:03 INFO  c.z.h.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-10-04 01:02:03 INFO  c.z.h.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-10-04 01:02:04 INFO  o.h.v.i.u.Version - HV000001: Hibernate Validator 8.0.2.Final
+2025-10-04 01:02:04 INFO  c.e.R.ResumeGeneratorApplication - Starting ResumeGeneratorApplication using Java 21.0.8 with PID 99478 (/Users/deepakn/Desktop/Java/ResumeGeneratorApplication/clean-repo/target/classes started by deepakn in /Users/deepakn/Desktop/Java/ResumeGeneratorApplication/clean-repo)
+2025-10-04 01:02:04 DEBUG c.e.R.ResumeGeneratorApplication - Running with Spring Boot v3.5.3, Spring v6.2.8
+2025-10-04 01:02:04 INFO  c.e.R.ResumeGeneratorApplication - No active profile set, falling back to 1 default profile: "default"
+2025-10-04 01:02:04 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-10-04 01:02:04 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-10-04 01:02:05 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-04 01:02:05 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 26 ms. Found 2 JPA repository interfaces.
+2025-10-04 01:02:05 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-10-04 01:02:05 INFO  o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-10-04 01:02:05 INFO  o.a.c.c.StandardService - Starting service [Tomcat]
+2025-10-04 01:02:05 INFO  o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-10-04 01:02:05 INFO  o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+2025-10-04 01:02:05 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 923 ms
+2025-10-04 01:02:05 INFO  o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-04 01:02:05 INFO  o.h.Version - HHH000412: Hibernate ORM core version 6.6.18.Final
+2025-10-04 01:02:05 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-10-04 01:02:05 INFO  o.h.e.b.i.EnversServiceImpl - Envers integration enabled? : true
+2025-10-04 01:02:05 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-04 01:02:05 INFO  c.z.h.HikariDataSource - HikariPool-1 - Starting...
+2025-10-04 01:02:05 INFO  c.z.h.p.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@70fd10a8
+2025-10-04 01:02:05 INFO  c.z.h.HikariDataSource - HikariPool-1 - Start completed.
+2025-10-04 01:02:05 INFO  o.h.o.c.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.4
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-04 01:02:06 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-04 01:02:06 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-04 01:02:06 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-04 01:02:06 DEBUG c.e.R.s.JwtAuthFilter$$SpringCGLIB$$0 - Filter 'jwtAuthFilter' configured for use
+2025-10-04 01:02:06 INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name userServiceImpl
+2025-10-04 01:02:07 INFO  o.s.b.a.e.w.EndpointLinksResolver - Exposing 4 endpoints beneath base path '/actuator'
+2025-10-04 01:02:07 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-10-04 01:02:07 INFO  o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-10-04 01:02:07 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-10-04 01:02:07 INFO  c.e.R.ResumeGeneratorApplication - Started ResumeGeneratorApplication in 2.756 seconds (process running for 2.951)
+2025-10-04 01:02:14 INFO  o.a.c.c.C.[.[.[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-04 01:02:14 INFO  o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-10-04 01:02:14 INFO  o.s.w.s.DispatcherServlet - Completed initialization in 1 ms
+2025-10-04 01:02:14 INFO  c.e.R.a.LoggingAspect - [AOP][BEFORE] com.example.ResumeGeneratorApplication.service.UserServiceImpl.loadUserByUsername() args=[deep242910@gmail.com] 
+2025-10-04 01:02:14 INFO  c.e.R.a.LoggingAspect - [AOP][AFTER_RETURNING] com.example.ResumeGeneratorApplication.service.UserServiceImpl.loadUserByUsername() returned=com.example.ResumeGeneratorApplication.entity.User@1
+2025-10-04 01:02:14 INFO  c.e.R.a.LoggingAspect - [AOP][AFTER] com.example.ResumeGeneratorApplication.service.UserServiceImpl.loadUserByUsername() args=[deep242910@gmail.com] 
+2025-10-04 01:02:26 INFO  c.e.R.a.LoggingAspect - [AOP][BEFORE] com.example.ResumeGeneratorApplication.service.UserServiceImpl.getUserById() args=[1] 
+2025-10-04 01:02:26 INFO  c.e.R.a.LoggingAspect - [AOP][AFTER_RETURNING] com.example.ResumeGeneratorApplication.service.UserServiceImpl.getUserById() returned=com.example.ResumeGeneratorApplication.entity.User@1
+2025-10-04 01:02:26 INFO  c.e.R.a.LoggingAspect - [AOP][AFTER] com.example.ResumeGeneratorApplication.service.UserServiceImpl.getUserById() args=[1] 
+2025-10-04 01:02:26 INFO  c.e.R.c.ResumeController - Fetching resume with ID: 1
+2025-10-04 01:02:26 INFO  c.e.R.a.LoggingAspect - [AOP][BEFORE] com.example.ResumeGeneratorApplication.service.ResumeServiceImpl.getResume() args=[1] 
+2025-10-04 01:02:26 INFO  c.e.R.s.ResumeServiceImpl - Fetching resume with ID: 1
+2025-10-04 01:02:26 INFO  c.e.R.s.ResumeServiceImpl - Successfully fetched resume with ID: 1
+2025-10-04 01:02:26 INFO  c.e.R.a.LoggingAspect - [AOP][AFTER_RETURNING] com.example.ResumeGeneratorApplication.service.ResumeServiceImpl.getResume() returned=ResumeDto(id=1, title=Backend Developer Resume, fullName=John Doe, email=john@example.com, phone=1234567890, address=New York, USA, summary=Experienced backend developer with strong expertise in Spring Boot and microservices., educationList=[EducationDto(id=1, institution=VVCE, degree=B.E., fieldOfStudy=Computer Science, startDate=2019-06-01, endDate=2023-06-01, grade=A)], experienceList=[ExperienceDto(id=1, jobTitle=Software Engineer, companyName=Tech Solutions Pvt Ltd, location=Bangalore, India, startDate=2021-07-01, endDate=2023-12-31, currentJob=false, description=Developed REST APIs using Spring Boot and optimized microservices performance.)], projects=[ProjectDto(id=1, title=Resume Generator Application, description=A Spring Boot application that supports resume management and export., techStack=[Java, PostgreSQL, Spring Boot], url=https://github.com/deepak/resume-generator)], skills=[Java, Docker, PostgreSQL, Kafka, Spring Boot])
+2025-10-04 01:02:26 INFO  c.e.R.a.LoggingAspect - [AOP][AFTER] com.example.ResumeGeneratorApplication.service.ResumeServiceImpl.getResume() args=[1] 
+2025-10-04 01:02:26 INFO  c.e.R.a.LoggingAspect - [AOP][AROUND] ResumeDto com.example.ResumeGeneratorApplication.service.ResumeServiceImpl.getResume(Long) executed in 20 ms
+2025-10-04 01:02:26 INFO  c.e.R.a.LoggingAspect - [AOP][AFTER_RETURNING] com.example.ResumeGeneratorApplication.controller.ResumeController.getResume() returned=<200 OK OK,ResumeDto(id=1, title=Backend Developer Resume, fullName=John Doe, email=john@example.com, phone=1234567890, address=New York, USA, summary=Experienced backend developer with strong expertise in Spring Boot and microservices., educationList=[EducationDto(id=1, institution=VVCE, degree=B.E., fieldOfStudy=Computer Science, startDate=2019-06-01, endDate=2023-06-01, grade=A)], experienceList=[ExperienceDto(id=1, jobTitle=Software Engineer, companyName=Tech Solutions Pvt Ltd, location=Bangalore, India, startDate=2021-07-01, endDate=2023-12-31, currentJob=false, description=Developed REST APIs using Spring Boot and optimized microservices performance.)], projects=[ProjectDto(id=1, title=Resume Generator Application, description=A Spring Boot application that supports resume management and export., techStack=[Java, PostgreSQL, Spring Boot], url=https://github.com/deepak/resume-generator)], skills=[Java, Docker, PostgreSQL, Kafka, Spring Boot]),[]>
+2025-10-04 01:02:58 INFO  c.e.R.a.LoggingAspect - [AOP][BEFORE] com.example.ResumeGeneratorApplication.service.UserServiceImpl.getUserById() args=[1] 
+2025-10-04 01:02:58 INFO  c.e.R.a.LoggingAspect - [AOP][AFTER_RETURNING] com.example.ResumeGeneratorApplication.service.UserServiceImpl.getUserById() returned=com.example.ResumeGeneratorApplication.entity.User@1
+2025-10-04 01:02:58 INFO  c.e.R.a.LoggingAspect - [AOP][AFTER] com.example.ResumeGeneratorApplication.service.UserServiceImpl.getUserById() args=[1] 
+2025-10-04 01:02:58 INFO  c.e.R.c.ResumeController - Fetching resume with ID: 1
+2025-10-04 01:02:58 INFO  c.e.R.a.LoggingAspect - [AOP][AFTER_RETURNING] com.example.ResumeGeneratorApplication.controller.ResumeController.getResume() returned=<200 OK OK,ResumeDto(id=1, title=Backend Developer Resume, fullName=John Doe, email=john@example.com, phone=1234567890, address=New York, USA, summary=Experienced backend developer with strong expertise in Spring Boot and microservices., educationList=[EducationDto(id=1, institution=VVCE, degree=B.E., fieldOfStudy=Computer Science, startDate=2019-06-01, endDate=2023-06-01, grade=A)], experienceList=[ExperienceDto(id=1, jobTitle=Software Engineer, companyName=Tech Solutions Pvt Ltd, location=Bangalore, India, startDate=2021-07-01, endDate=2023-12-31, currentJob=false, description=Developed REST APIs using Spring Boot and optimized microservices performance.)], projects=[ProjectDto(id=1, title=Resume Generator Application, description=A Spring Boot application that supports resume management and export., techStack=[Java, PostgreSQL, Spring Boot], url=https://github.com/deepak/resume-generator)], skills=[Java, Docker, PostgreSQL, Kafka, Spring Boot]),[]>
+2025-10-04 01:03:06 INFO  c.e.R.a.LoggingAspect - [AOP][BEFORE] com.example.ResumeGeneratorApplication.service.UserServiceImpl.getUserById() args=[1] 
+2025-10-04 01:03:06 INFO  c.e.R.a.LoggingAspect - [AOP][AFTER_RETURNING] com.example.ResumeGeneratorApplication.service.UserServiceImpl.getUserById() returned=com.example.ResumeGeneratorApplication.entity.User@1
+2025-10-04 01:03:06 INFO  c.e.R.a.LoggingAspect - [AOP][AFTER] com.example.ResumeGeneratorApplication.service.UserServiceImpl.getUserById() args=[1] 
+2025-10-04 01:03:06 INFO  c.e.R.c.ResumeController - Fetching resume with ID: 1
+2025-10-04 01:03:06 INFO  c.e.R.a.LoggingAspect - [AOP][AFTER_RETURNING] com.example.ResumeGeneratorApplication.controller.ResumeController.getResume() returned=<200 OK OK,ResumeDto(id=1, title=Backend Developer Resume, fullName=John Doe, email=john@example.com, phone=1234567890, address=New York, USA, summary=Experienced backend developer with strong expertise in Spring Boot and microservices., educationList=[EducationDto(id=1, institution=VVCE, degree=B.E., fieldOfStudy=Computer Science, startDate=2019-06-01, endDate=2023-06-01, grade=A)], experienceList=[ExperienceDto(id=1, jobTitle=Software Engineer, companyName=Tech Solutions Pvt Ltd, location=Bangalore, India, startDate=2021-07-01, endDate=2023-12-31, currentJob=false, description=Developed REST APIs using Spring Boot and optimized microservices performance.)], projects=[ProjectDto(id=1, title=Resume Generator Application, description=A Spring Boot application that supports resume management and export., techStack=[Java, PostgreSQL, Spring Boot], url=https://github.com/deepak/resume-generator)], skills=[Java, Docker, PostgreSQL, Kafka, Spring Boot]),[]>
+2025-10-04 01:08:16 INFO  o.s.b.w.e.t.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-04 01:08:18 INFO  o.s.b.w.e.t.GracefulShutdown - Graceful shutdown complete
+2025-10-04 01:08:19 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-04 01:08:19 INFO  c.z.h.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-10-04 01:08:19 INFO  c.z.h.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-10-04 01:08:20 INFO  o.h.v.i.u.Version - HV000001: Hibernate Validator 8.0.2.Final
+2025-10-04 01:08:20 INFO  c.e.R.ResumeGeneratorApplication - Starting ResumeGeneratorApplication using Java 21.0.8 with PID 1102 (/Users/deepakn/Desktop/Java/ResumeGeneratorApplication/clean-repo/target/classes started by deepakn in /Users/deepakn/Desktop/Java/ResumeGeneratorApplication/clean-repo)
+2025-10-04 01:08:20 DEBUG c.e.R.ResumeGeneratorApplication - Running with Spring Boot v3.5.3, Spring v6.2.8
+2025-10-04 01:08:20 INFO  c.e.R.ResumeGeneratorApplication - No active profile set, falling back to 1 default profile: "default"
+2025-10-04 01:08:20 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-10-04 01:08:20 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-10-04 01:08:21 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-04 01:08:21 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 15 ms. Found 2 JPA repository interfaces.
+2025-10-04 01:08:21 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-10-04 01:08:21 INFO  o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-10-04 01:08:21 INFO  o.a.c.c.StandardService - Starting service [Tomcat]
+2025-10-04 01:08:21 INFO  o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-10-04 01:08:21 INFO  o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+2025-10-04 01:08:21 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 756 ms
+2025-10-04 01:08:21 INFO  o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-04 01:08:21 INFO  o.h.Version - HHH000412: Hibernate ORM core version 6.6.18.Final
+2025-10-04 01:08:21 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-10-04 01:08:21 INFO  o.h.e.b.i.EnversServiceImpl - Envers integration enabled? : true
+2025-10-04 01:08:21 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-04 01:08:21 INFO  c.z.h.HikariDataSource - HikariPool-1 - Starting...
+2025-10-04 01:08:21 INFO  c.z.h.p.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2b49662f
+2025-10-04 01:08:21 INFO  c.z.h.HikariDataSource - HikariPool-1 - Start completed.
+2025-10-04 01:08:21 INFO  o.h.o.c.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.4
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-04 01:08:22 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-04 01:08:22 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-04 01:08:22 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-04 01:08:22 DEBUG c.e.R.s.JwtAuthFilter$$SpringCGLIB$$0 - Filter 'jwtAuthFilter' configured for use
+2025-10-04 01:08:22 INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name userServiceImpl
+2025-10-04 01:08:22 INFO  o.s.b.a.e.w.EndpointLinksResolver - Exposing 4 endpoints beneath base path '/actuator'
+2025-10-04 01:08:23 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-10-04 01:08:23 INFO  o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-10-04 01:08:23 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-10-04 01:08:23 INFO  c.e.R.ResumeGeneratorApplication - Started ResumeGeneratorApplication in 2.652 seconds (process running for 2.837)
+2025-10-04 01:08:27 INFO  o.a.c.c.C.[.[.[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-04 01:08:27 INFO  o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-10-04 01:08:27 INFO  o.s.w.s.DispatcherServlet - Completed initialization in 1 ms
+2025-10-04 01:08:27 INFO  c.e.R.a.LoggingAspect - [AOP][BEFORE] com.example.ResumeGeneratorApplication.service.UserServiceImpl.loadUserByUsername() args=[deep242910@gmail.com] 
+2025-10-04 01:08:27 INFO  c.e.R.a.LoggingAspect - [AOP][AFTER_RETURNING] com.example.ResumeGeneratorApplication.service.UserServiceImpl.loadUserByUsername() returned=com.example.ResumeGeneratorApplication.entity.User@1
+2025-10-04 01:08:27 INFO  c.e.R.a.LoggingAspect - [AOP][AFTER] com.example.ResumeGeneratorApplication.service.UserServiceImpl.loadUserByUsername() args=[deep242910@gmail.com] 
+2025-10-04 01:08:36 INFO  c.e.R.a.LoggingAspect - [AOP][BEFORE] com.example.ResumeGeneratorApplication.service.UserServiceImpl.getUserById() args=[1] 
+2025-10-04 01:08:36 INFO  c.e.R.a.LoggingAspect - [AOP][AFTER_RETURNING] com.example.ResumeGeneratorApplication.service.UserServiceImpl.getUserById() returned=com.example.ResumeGeneratorApplication.entity.User@1
+2025-10-04 01:08:36 INFO  c.e.R.a.LoggingAspect - [AOP][AFTER] com.example.ResumeGeneratorApplication.service.UserServiceImpl.getUserById() args=[1] 
+2025-10-04 01:08:36 INFO  c.e.R.c.ResumeController - Fetching resume with ID: 1
+2025-10-04 01:08:36 INFO  c.e.R.a.LoggingAspect - [AOP][BEFORE] com.example.ResumeGeneratorApplication.service.ResumeServiceImpl.getResume() args=[1] 
+2025-10-04 01:08:36 INFO  c.e.R.s.ResumeServiceImpl - Fetching resume with ID: 1
+2025-10-04 01:08:36 INFO  c.e.R.s.ResumeServiceImpl - Successfully fetched resume with ID: 1
+2025-10-04 01:08:36 INFO  c.e.R.a.LoggingAspect - [AOP][AFTER_RETURNING] com.example.ResumeGeneratorApplication.service.ResumeServiceImpl.getResume() returned=ResumeDto(id=1, title=Backend Developer Resume, fullName=John Doe, email=john@example.com, phone=1234567890, address=New York, USA, summary=Experienced backend developer with strong expertise in Spring Boot and microservices., educationList=[EducationDto(id=1, institution=VVCE, degree=B.E., fieldOfStudy=Computer Science, startDate=2019-06-01, endDate=2023-06-01, grade=A)], experienceList=[ExperienceDto(id=1, jobTitle=Software Engineer, companyName=Tech Solutions Pvt Ltd, location=Bangalore, India, startDate=2021-07-01, endDate=2023-12-31, currentJob=false, description=Developed REST APIs using Spring Boot and optimized microservices performance.)], projects=[ProjectDto(id=1, title=Resume Generator Application, description=A Spring Boot application that supports resume management and export., techStack=[Java, PostgreSQL, Spring Boot], url=https://github.com/deepak/resume-generator)], skills=[Java, Docker, PostgreSQL, Kafka, Spring Boot])
+2025-10-04 01:08:36 INFO  c.e.R.a.LoggingAspect - [AOP][AFTER] com.example.ResumeGeneratorApplication.service.ResumeServiceImpl.getResume() args=[1] 
+2025-10-04 01:08:36 INFO  c.e.R.a.LoggingAspect - [AOP][AROUND] ResumeDto com.example.ResumeGeneratorApplication.service.ResumeServiceImpl.getResume(Long) executed in 23 ms
+2025-10-04 01:08:36 INFO  c.e.R.a.LoggingAspect - [AOP][AFTER_RETURNING] com.example.ResumeGeneratorApplication.controller.ResumeController.getResume() returned=<200 OK OK,ResumeDto(id=1, title=Backend Developer Resume, fullName=John Doe, email=john@example.com, phone=1234567890, address=New York, USA, summary=Experienced backend developer with strong expertise in Spring Boot and microservices., educationList=[EducationDto(id=1, institution=VVCE, degree=B.E., fieldOfStudy=Computer Science, startDate=2019-06-01, endDate=2023-06-01, grade=A)], experienceList=[ExperienceDto(id=1, jobTitle=Software Engineer, companyName=Tech Solutions Pvt Ltd, location=Bangalore, India, startDate=2021-07-01, endDate=2023-12-31, currentJob=false, description=Developed REST APIs using Spring Boot and optimized microservices performance.)], projects=[ProjectDto(id=1, title=Resume Generator Application, description=A Spring Boot application that supports resume management and export., techStack=[Java, PostgreSQL, Spring Boot], url=https://github.com/deepak/resume-generator)], skills=[Java, Docker, PostgreSQL, Kafka, Spring Boot]),[]>
+2025-10-04 01:08:40 INFO  c.e.R.c.ResumeController - Fetching resume with ID: 1
+2025-10-04 01:08:40 INFO  c.e.R.a.LoggingAspect - [AOP][AFTER_RETURNING] com.example.ResumeGeneratorApplication.controller.ResumeController.getResume() returned=<200 OK OK,ResumeDto(id=1, title=Backend Developer Resume, fullName=John Doe, email=john@example.com, phone=1234567890, address=New York, USA, summary=Experienced backend developer with strong expertise in Spring Boot and microservices., educationList=[EducationDto(id=1, institution=VVCE, degree=B.E., fieldOfStudy=Computer Science, startDate=2019-06-01, endDate=2023-06-01, grade=A)], experienceList=[ExperienceDto(id=1, jobTitle=Software Engineer, companyName=Tech Solutions Pvt Ltd, location=Bangalore, India, startDate=2021-07-01, endDate=2023-12-31, currentJob=false, description=Developed REST APIs using Spring Boot and optimized microservices performance.)], projects=[ProjectDto(id=1, title=Resume Generator Application, description=A Spring Boot application that supports resume management and export., techStack=[Java, PostgreSQL, Spring Boot], url=https://github.com/deepak/resume-generator)], skills=[Java, Docker, PostgreSQL, Kafka, Spring Boot]),[]>
+2025-10-04 01:08:44 INFO  c.e.R.c.ResumeController - Fetching resume with ID: 1
+2025-10-04 01:08:44 INFO  c.e.R.a.LoggingAspect - [AOP][AFTER_RETURNING] com.example.ResumeGeneratorApplication.controller.ResumeController.getResume() returned=<200 OK OK,ResumeDto(id=1, title=Backend Developer Resume, fullName=John Doe, email=john@example.com, phone=1234567890, address=New York, USA, summary=Experienced backend developer with strong expertise in Spring Boot and microservices., educationList=[EducationDto(id=1, institution=VVCE, degree=B.E., fieldOfStudy=Computer Science, startDate=2019-06-01, endDate=2023-06-01, grade=A)], experienceList=[ExperienceDto(id=1, jobTitle=Software Engineer, companyName=Tech Solutions Pvt Ltd, location=Bangalore, India, startDate=2021-07-01, endDate=2023-12-31, currentJob=false, description=Developed REST APIs using Spring Boot and optimized microservices performance.)], projects=[ProjectDto(id=1, title=Resume Generator Application, description=A Spring Boot application that supports resume management and export., techStack=[Java, PostgreSQL, Spring Boot], url=https://github.com/deepak/resume-generator)], skills=[Java, Docker, PostgreSQL, Kafka, Spring Boot]),[]>
+2025-10-04 01:08:48 INFO  c.e.R.c.ResumeController - Fetching resume with ID: 1
+2025-10-04 01:08:48 INFO  c.e.R.a.LoggingAspect - [AOP][AFTER_RETURNING] com.example.ResumeGeneratorApplication.controller.ResumeController.getResume() returned=<200 OK OK,ResumeDto(id=1, title=Backend Developer Resume, fullName=John Doe, email=john@example.com, phone=1234567890, address=New York, USA, summary=Experienced backend developer with strong expertise in Spring Boot and microservices., educationList=[EducationDto(id=1, institution=VVCE, degree=B.E., fieldOfStudy=Computer Science, startDate=2019-06-01, endDate=2023-06-01, grade=A)], experienceList=[ExperienceDto(id=1, jobTitle=Software Engineer, companyName=Tech Solutions Pvt Ltd, location=Bangalore, India, startDate=2021-07-01, endDate=2023-12-31, currentJob=false, description=Developed REST APIs using Spring Boot and optimized microservices performance.)], projects=[ProjectDto(id=1, title=Resume Generator Application, description=A Spring Boot application that supports resume management and export., techStack=[Java, PostgreSQL, Spring Boot], url=https://github.com/deepak/resume-generator)], skills=[Java, Docker, PostgreSQL, Kafka, Spring Boot]),[]>
+2025-10-04 01:08:52 INFO  c.e.R.c.ResumeController - Fetching resume with ID: 1
+2025-10-04 01:08:52 INFO  c.e.R.a.LoggingAspect - [AOP][AFTER_RETURNING] com.example.ResumeGeneratorApplication.controller.ResumeController.getResume() returned=<200 OK OK,ResumeDto(id=1, title=Backend Developer Resume, fullName=John Doe, email=john@example.com, phone=1234567890, address=New York, USA, summary=Experienced backend developer with strong expertise in Spring Boot and microservices., educationList=[EducationDto(id=1, institution=VVCE, degree=B.E., fieldOfStudy=Computer Science, startDate=2019-06-01, endDate=2023-06-01, grade=A)], experienceList=[ExperienceDto(id=1, jobTitle=Software Engineer, companyName=Tech Solutions Pvt Ltd, location=Bangalore, India, startDate=2021-07-01, endDate=2023-12-31, currentJob=false, description=Developed REST APIs using Spring Boot and optimized microservices performance.)], projects=[ProjectDto(id=1, title=Resume Generator Application, description=A Spring Boot application that supports resume management and export., techStack=[Java, PostgreSQL, Spring Boot], url=https://github.com/deepak/resume-generator)], skills=[Java, Docker, PostgreSQL, Kafka, Spring Boot]),[]>
+2025-10-04 01:09:39 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [io.jsonwebtoken.ExpiredJwtException: JWT expired 12283 milliseconds ago at 2025-10-03T19:39:27.000Z. Current time: 2025-10-03T19:39:39.283Z. Allowed clock skew: 0 milliseconds.]
+2025-10-04 01:09:40 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [io.jsonwebtoken.ExpiredJwtException: JWT expired 13474 milliseconds ago at 2025-10-03T19:39:27.000Z. Current time: 2025-10-03T19:39:40.474Z. Allowed clock skew: 0 milliseconds.]
+2025-10-04 01:09:53 INFO  c.e.R.c.ResumeController - Fetching resume with ID: 1
+2025-10-04 01:09:53 INFO  c.e.R.a.LoggingAspect - [AOP][AFTER_RETURNING] com.example.ResumeGeneratorApplication.controller.ResumeController.getResume() returned=<200 OK OK,ResumeDto(id=1, title=Backend Developer Resume, fullName=John Doe, email=john@example.com, phone=1234567890, address=New York, USA, summary=Experienced backend developer with strong expertise in Spring Boot and microservices., educationList=[EducationDto(id=1, institution=VVCE, degree=B.E., fieldOfStudy=Computer Science, startDate=2019-06-01, endDate=2023-06-01, grade=A)], experienceList=[ExperienceDto(id=1, jobTitle=Software Engineer, companyName=Tech Solutions Pvt Ltd, location=Bangalore, India, startDate=2021-07-01, endDate=2023-12-31, currentJob=false, description=Developed REST APIs using Spring Boot and optimized microservices performance.)], projects=[ProjectDto(id=1, title=Resume Generator Application, description=A Spring Boot application that supports resume management and export., techStack=[Java, PostgreSQL, Spring Boot], url=https://github.com/deepak/resume-generator)], skills=[Java, Docker, PostgreSQL, Kafka, Spring Boot]),[]>
+2025-10-04 01:10:05 INFO  o.s.b.w.e.t.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-04 01:10:07 INFO  o.s.b.w.e.t.GracefulShutdown - Graceful shutdown complete
+2025-10-04 01:10:07 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-04 01:10:07 INFO  c.z.h.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-10-04 01:10:07 INFO  c.z.h.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-10-04 01:10:09 INFO  o.h.v.i.u.Version - HV000001: Hibernate Validator 8.0.2.Final
+2025-10-04 01:10:09 INFO  c.e.R.ResumeGeneratorApplication - Starting ResumeGeneratorApplication using Java 21.0.8 with PID 1514 (/Users/deepakn/Desktop/Java/ResumeGeneratorApplication/clean-repo/target/classes started by deepakn in /Users/deepakn/Desktop/Java/ResumeGeneratorApplication/clean-repo)
+2025-10-04 01:10:09 DEBUG c.e.R.ResumeGeneratorApplication - Running with Spring Boot v3.5.3, Spring v6.2.8
+2025-10-04 01:10:09 INFO  c.e.R.ResumeGeneratorApplication - No active profile set, falling back to 1 default profile: "default"
+2025-10-04 01:10:09 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-10-04 01:10:09 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-10-04 01:10:09 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-04 01:10:09 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 26 ms. Found 2 JPA repository interfaces.
+2025-10-04 01:10:09 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-10-04 01:10:10 INFO  o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-10-04 01:10:10 INFO  o.a.c.c.StandardService - Starting service [Tomcat]
+2025-10-04 01:10:10 INFO  o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-10-04 01:10:10 INFO  o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+2025-10-04 01:10:10 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 937 ms
+2025-10-04 01:10:10 INFO  o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-04 01:10:10 INFO  o.h.Version - HHH000412: Hibernate ORM core version 6.6.18.Final
+2025-10-04 01:10:10 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-10-04 01:10:10 INFO  o.h.e.b.i.EnversServiceImpl - Envers integration enabled? : true
+2025-10-04 01:10:10 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-04 01:10:10 INFO  c.z.h.HikariDataSource - HikariPool-1 - Starting...
+2025-10-04 01:10:10 INFO  c.z.h.p.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6a3cf39d
+2025-10-04 01:10:10 INFO  c.z.h.HikariDataSource - HikariPool-1 - Start completed.
+2025-10-04 01:10:10 INFO  o.h.o.c.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.4
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-04 01:10:10 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-04 01:10:10 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-04 01:10:11 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-04 01:10:11 DEBUG c.e.R.s.JwtAuthFilter$$SpringCGLIB$$0 - Filter 'jwtAuthFilter' configured for use
+2025-10-04 01:10:11 INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name userServiceImpl
+2025-10-04 01:10:11 INFO  o.s.b.a.e.w.EndpointLinksResolver - Exposing 4 endpoints beneath base path '/actuator'
+2025-10-04 01:10:11 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-10-04 01:10:11 INFO  o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-10-04 01:10:11 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-10-04 01:10:11 INFO  c.e.R.ResumeGeneratorApplication - Started ResumeGeneratorApplication in 2.864 seconds (process running for 3.068)
+2025-10-04 01:11:25 INFO  o.s.b.w.e.t.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-04 01:11:27 INFO  o.s.b.w.e.t.GracefulShutdown - Graceful shutdown complete
+2025-10-04 01:11:27 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-04 01:11:27 INFO  c.z.h.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-10-04 01:11:27 INFO  c.z.h.HikariDataSource - HikariPool-1 - Shutdown completed.

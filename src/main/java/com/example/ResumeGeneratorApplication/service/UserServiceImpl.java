@@ -5,6 +5,7 @@ import com.example.ResumeGeneratorApplication.exception.ResourceNotFoundExceptio
 import com.example.ResumeGeneratorApplication.repository.UserRepo;
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
@@ -18,11 +19,13 @@ public class UserServiceImpl implements UserService, UserDetailsService {
 //    private final ModelMapper modelMapper;
 
     @Override
+//    @Cacheable(cacheNames = "users", key = "'byEmail:' + #username")
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
         return userRepo.findByEmail(username).orElseThrow(()->new UsernameNotFoundException("User not found with email:"+username));
     }
 
     @Override
+//    @Cacheable(cacheNames = "users", key = "'byId:' + #id")
     public User getUserById(Long id) {
         return userRepo.findById(id).orElseThrow(() -> new ResourceNotFoundException("User not found with id: "+id));
     }
